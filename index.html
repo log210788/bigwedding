@@ -1,0 +1,3455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tikhonov's Peaceful English Sanctuary | Lesson 01 Transcript & Vocabulary</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Literary Serif), Plus Jakarta Sans (Soft Modern UI), JetBrains Mono (Timestamps & IPA) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            parchment: {
+              50: '#fbf9f5',
+              100: '#f6f1e7',
+              200: '#ede3d1',
+              300: '#dfd0b5',
+              400: '#cbb38e',
+              500: '#b6966b',
+            },
+            autumn: {
+              50: '#fcf6f0',
+              100: '#f7e9db',
+              200: '#eed0b5',
+              300: '#e2b086',
+              400: '#d38c57',
+              500: '#be6f38',
+              600: '#a3582b',
+              700: '#854524',
+              800: '#6c3921',
+            },
+            sage: {
+              50: '#f4f7f5',
+              100: '#e4ece7',
+              200: '#cadad1',
+              300: '#a5bfb1',
+              400: '#7b9f8d',
+              500: '#5b826f',
+              600: '#476858',
+              700: '#3a5448',
+              800: '#30443b',
+            },
+            slatewarm: {
+              700: '#3d4441',
+              800: '#2b312e',
+              900: '#1e2321',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP for Gentle Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Popper & Tippy.js for Interactive Vocabulary Explanations -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+
+  <!-- Canvas Confetti for Gentle Practice Encouragement -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <style>
+    :root {
+      --bg-base: #f9f6f0;
+      --bg-card: rgba(255, 253, 249, 0.90);
+      --bg-subcard: rgba(255, 255, 255, 0.94);
+      --border-soft: #e6decb;
+      --border-accent: #d9c8b0;
+      --text-main: #2b312e;
+      --text-muted: #5c6660;
+      --grad-1: rgba(238, 208, 181, 0.42);
+      --grad-2: rgba(202, 218, 209, 0.48);
+      --grad-3: rgba(246, 241, 231, 0.70);
+    }
+
+    body[data-theme="winchester"] {
+      --bg-base: #f3f6f5;
+      --bg-card: rgba(252, 254, 253, 0.91);
+      --bg-subcard: rgba(255, 255, 255, 0.95);
+      --border-soft: #d7e2dc;
+      --border-accent: #b8ccc2;
+      --text-main: #26312d;
+      --text-muted: #52635c;
+      --grad-1: rgba(202, 218, 209, 0.50);
+      --grad-2: rgba(219, 228, 238, 0.48);
+      --grad-3: rgba(244, 240, 230, 0.55);
+    }
+
+    body[data-theme="twilight"] {
+      --bg-base: #f5efe6;
+      --bg-card: rgba(253, 249, 242, 0.92);
+      --bg-subcard: rgba(255, 252, 247, 0.96);
+      --border-soft: #e2d2be;
+      --border-accent: #cfaea0;
+      --text-main: #2d2622;
+      --text-muted: #665850;
+      --grad-1: rgba(226, 176, 134, 0.36);
+      --grad-2: rgba(214, 196, 176, 0.42);
+      --grad-3: rgba(235, 220, 202, 0.55);
+    }
+
+    body {
+      background-color: var(--bg-base);
+      background-image:
+        radial-gradient(at 8% 5%, var(--grad-1) 0px, transparent 52%),
+        radial-gradient(at 92% 18%, var(--grad-2) 0px, transparent 52%),
+        radial-gradient(at 50% 88%, var(--grad-3) 0px, transparent 58%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      transition: background-color 0.5s ease, color 0.4s ease;
+      overflow-x: hidden;
+    }
+
+    .sanctuary-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 12px 36px -10px rgba(91, 130, 111, 0.08), 0 4px 14px -3px rgba(43, 49, 46, 0.04);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .sanctuary-subcard {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 4px 14px -4px rgba(43, 49, 46, 0.04);
+      transition: all 0.25s ease;
+    }
+
+    /* Inline Vocabulary Highlight in Transcript */
+    .vocab-mark {
+      display: inline-block;
+      background: linear-gradient(120deg, rgba(226, 176, 134, 0.25) 0%, rgba(165, 191, 177, 0.28) 100%);
+      border-bottom: 2px dashed #a3582b;
+      color: #5b3216;
+      font-weight: 600;
+      padding: 0px 5px;
+      margin: 0 1px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .vocab-mark:hover, .vocab-mark.active-vocab {
+      background: linear-gradient(120deg, rgba(190, 111, 56, 0.25) 0%, rgba(91, 130, 111, 0.32) 100%);
+      border-bottom-style: solid;
+      border-bottom-color: #476858;
+      transform: translateY(-1px);
+      box-shadow: 0 3px 10px rgba(163, 88, 43, 0.14);
+    }
+
+    body.hide-vocab-highlights .vocab-mark {
+      background: transparent !important;
+      border-bottom: none !important;
+      color: inherit !important;
+      font-weight: inherit !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+
+    /* Note-taker fix badge */
+    .asr-fix-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f4f7f5;
+      color: #476858;
+      border: 1px solid #cadad1;
+      padding: 1px 7px;
+      border-radius: 999px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+
+    body.hide-asr-fixes .asr-fix-pill {
+      display: none !important;
+    }
+
+    /* Custom Tippy Tooltip Theme: Peaceful Autumn */
+    .tippy-box[data-theme~='autumn-sanctuary'] {
+      background-color: #fffdf9;
+      color: #2b312e;
+      border: 1px solid #dfd0b5;
+      border-radius: 1rem;
+      box-shadow: 0 20px 38px -8px rgba(61, 68, 65, 0.16), 0 6px 16px -4px rgba(163, 88, 43, 0.08);
+      padding: 0.35rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .tippy-box[data-theme~='autumn-sanctuary'][data-placement^='top'] > .tippy-arrow::before {
+      border-top-color: #dfd0b5;
+    }
+    .tippy-box[data-theme~='autumn-sanctuary'][data-placement^='bottom'] > .tippy-arrow::before {
+      border-bottom-color: #dfd0b5;
+    }
+
+    /* Highlight pulse when jumping to a transcript line */
+    @keyframes gentleGlow {
+      0% { background-color: rgba(226, 176, 134, 0.45); transform: scale(1.005); }
+      50% { background-color: rgba(165, 191, 177, 0.38); }
+      100% { background-color: transparent; transform: scale(1); }
+    }
+    .turn-highlight-flash {
+      animation: gentleGlow 2.8s ease-out;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f6f1e7;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbb38e;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a3582b;
+    }
+
+    @media print {
+      .no-print, #autumn-breeze-canvas { display: none !important; }
+      body { background: #fff !important; }
+      .sanctuary-card, .sanctuary-subcard { box-shadow: none !important; border: 1px solid #ccc !important; }
+    }
+  </style>
+</head>
+<body data-theme="kensington" class="font-sans antialiased min-h-screen selection:bg-autumn-200 selection:text-slatewarm-900 relative">
+
+  <!-- CALMING AUTUMN BREEZE CANVAS OVERLAY (Interactive Physics Leaves & Motes) -->
+  <canvas id="autumn-breeze-canvas" class="fixed inset-0 pointer-events-none z-20 opacity-80"></canvas>
+
+  <!-- STICKY PEACEFUL NAVIGATION & ATMOSPHERE BAR -->
+  <header class="sticky top-0 z-40 border-b border-[#e6decb]/90 bg-[#fbf9f5]/85 backdrop-blur-md no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Brand Identity -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-sage-600 via-sage-500 to-autumn-500 flex items-center justify-center text-white font-serif text-xl font-bold shadow-sm">
+          T
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-serif font-bold text-lg sm:text-xl tracking-tight text-slatewarm-900">Tikhonov's Peaceful English Sanctuary</span>
+            <span class="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 text-[11px] font-medium rounded-full bg-sage-100 text-sage-800 border border-sage-200">
+              <i data-lucide="feather" class="w-3 h-3 text-sage-600"></i>
+              Lesson 01 • October 27, 2026
+            </span>
+          </div>
+          <p class="text-[11px] text-stone-500 hidden md:block">A calm, tidy space with your corrected lesson transcript, timestamps, and 58 flagged vocabulary notes</p>
+        </div>
+      </div>
+
+      <!-- Calming Atmosphere Controls: Ambient Breeze Audio, Leaf Animation, UK Voice Speed & Palette -->
+      <div class="flex flex-wrap items-center gap-2">
+        
+        <!-- Ambient Autumn Breeze Soundscape Player (Web Audio API) -->
+        <div class="flex items-center gap-1.5 bg-white/90 border border-[#dfd0b5] rounded-xl px-2.5 py-1 shadow-sm">
+          <button id="soundscape-btn" onclick="toggleSoundscape()" class="flex items-center gap-1.5 text-xs font-semibold text-sage-700 hover:text-sage-900 transition px-1.5 py-0.5 rounded-lg" title="Play soothing autumn breeze & gentle rain soundscape">
+            <i data-lucide="wind" id="soundscape-icon" class="w-3.5 h-3.5 text-autumn-600"></i>
+            <span id="soundscape-label">Autumn Breeze Audio: Off</span>
+          </button>
+          <select id="soundscape-preset" onchange="changeSoundscapePreset(this.value)" class="text-[11px] bg-parchment-50 border border-parchment-200 rounded-lg px-1.5 py-0.5 text-stone-700 focus:outline-none" title="Choose calming ambient sound">
+            <option value="breeze">🍂 Kensington Breeze</option>
+            <option value="rain">🌧️ Soft London Rain</option>
+            <option value="study">🕯️ Warm Study Hearth</option>
+          </select>
+          <input id="soundscape-volume" type="range" min="0.05" max="0.6" step="0.05" value="0.22" oninput="updateSoundscapeVolume(this.value)" class="w-14 accent-sage-600 cursor-pointer hidden sm:block" title="Ambient Sound Volume" />
+        </div>
+
+        <!-- Falling Autumn Leaves Toggle -->
+        <button id="leaves-toggle-btn" onclick="cycleLeafBreeze()" class="px-2.5 py-1.5 rounded-xl bg-white/90 hover:bg-autumn-50 border border-[#dfd0b5] text-xs font-medium text-stone-700 flex items-center gap-1.5 shadow-sm transition" title="Adjust falling autumn leaves animation">
+          <i data-lucide="leaf" class="w-3.5 h-3.5 text-autumn-600"></i>
+          <span id="leaves-label" class="hidden sm:inline">Leaves: Gentle</span>
+        </button>
+
+        <!-- UK Voice Speed -->
+        <div class="flex items-center gap-1 bg-white/90 border border-[#dfd0b5] rounded-xl px-2 py-1 shadow-sm text-xs">
+          <i data-lucide="volume-2" class="w-3.5 h-3.5 text-sage-600"></i>
+          <button onclick="setVoiceRate(0.85)" id="rate-slow" class="px-1.5 py-0.5 rounded-md text-[11px] text-stone-600 hover:bg-parchment-100 transition">0.85×</button>
+          <button onclick="setVoiceRate(1.0)" id="rate-normal" class="px-1.5 py-0.5 rounded-md text-[11px] bg-sage-600 text-white font-semibold transition">UK 1×</button>
+        </div>
+
+        <!-- Theme Mood Selector -->
+        <div class="hidden lg:flex items-center gap-1 bg-white/90 border border-[#dfd0b5] rounded-xl p-1 text-[11px] shadow-sm">
+          <button onclick="setThemeMood('kensington')" id="theme-kensington" class="px-2 py-0.5 rounded-lg bg-autumn-100 text-autumn-800 font-semibold transition">Bath Stone</button>
+          <button onclick="setThemeMood('winchester')" id="theme-winchester" class="px-2 py-0.5 rounded-lg text-stone-600 hover:text-stone-900 transition">Winchester Mist</button>
+          <button onclick="setThemeMood('twilight')" id="theme-twilight" class="px-2 py-0.5 rounded-lg text-stone-600 hover:text-stone-900 transition">Warm Study</button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 space-y-7 relative z-10">
+
+    <!-- PEACEFUL HERO BANNER -->
+    <section class="sanctuary-card rounded-3xl p-6 sm:p-9 relative overflow-hidden">
+      <div class="absolute -right-12 -top-12 w-64 h-64 bg-autumn-200/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-12 -bottom-12 w-64 h-64 bg-sage-200/35 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-7 items-center">
+        <div class="lg:col-span-8 space-y-3.5">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-sage-100/90 border border-sage-200 text-sage-800 text-xs font-medium">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-autumn-600"></i>
+            <span>October 27, 2026 • Welcome Back to Thailand • Azerbaijan Wedding, Dr. Seuss Cadence & Speed-Thinking</span>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-4xl lg:text-[2.65rem] font-bold text-slatewarm-900 leading-[1.16]">
+            Welcome Back, Tikhonov — Your <span class="text-autumn-700 italic font-semibold">Personal Sanctuary</span> for Rhythm, Cadence & Active Recall
+          </h1>
+
+          <p class="text-stone-600 text-sm sm:text-base leading-relaxed max-w-3xl">
+            It was fantastic catching up after your month-long journey through <strong>Azerbaijan and Georgia</strong>! Just as Lewis showed you on screen during our lesson, here is your <strong class="text-slatewarm-800">complete, tidied 52-minute transcript</strong> with exact timestamps and <strong class="text-slatewarm-800">58 flagged vocabulary words & idioms</strong>. Every funny speech-to-text mishearing from the automated note-taker (such as writing <em>"In Avera Beach Restaurant"</em> instead of <em>"In a very big restaurant"</em>, <em>"jesters"</em> instead of <em>"gestures"</em>, or <em>"smock"</em> instead of <em>"smug"</em>!) has been sorted out cleanly for you.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-2.5 pt-1 text-xs text-stone-700">
+            <span class="inline-flex items-center gap-1.5 bg-parchment-100/90 px-3 py-1.5 rounded-xl border border-parchment-300">
+              <i data-lucide="mouse-pointer-click" class="w-3.5 h-3.5 text-autumn-600"></i>
+              <span><strong>Tip 1:</strong> Hover or click any <span class="vocab-mark text-xs">highlighted word</span> in the transcript to see its meaning, Russian equivalent & UK audio</span>
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-sage-50/90 px-3 py-1.5 rounded-xl border border-sage-200">
+              <i data-lucide="mic" class="w-3.5 h-3.5 text-sage-600"></i>
+              <span><strong>Tip 2:</strong> Check <strong>Tab 4</strong> for your <em>Dr. Seuss / Mr. Knox</em> cadence poem homework before Thursday's class!</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Calm Lesson Summary Cards -->
+        <div class="lg:col-span-4 grid grid-cols-2 gap-3">
+          <div onclick="switchTab('transcript')" class="cursor-pointer p-4 rounded-2xl bg-parchment-50/95 border border-parchment-300 hover:border-autumn-400 transition shadow-sm group">
+            <div class="flex items-center justify-between text-autumn-700 mb-1">
+              <span class="text-[11px] font-mono font-semibold uppercase">52 Mins</span>
+              <i data-lucide="scroll-text" class="w-4 h-4 group-hover:scale-110 transition"></i>
+            </div>
+            <div class="font-serif font-bold text-slatewarm-900 text-lg">Full Transcript</div>
+            <p class="text-[11px] text-stone-600 mt-0.5">6 chapters tidied with inline vocab & audio</p>
+          </div>
+
+          <div onclick="switchTab('vocab')" class="cursor-pointer p-4 rounded-2xl bg-sage-50/95 border border-sage-200 hover:border-sage-400 transition shadow-sm group">
+            <div class="flex items-center justify-between text-sage-700 mb-1">
+              <span class="text-[11px] font-mono font-semibold uppercase">58 Flagged</span>
+              <i data-lucide="book-open-check" class="w-4 h-4 group-hover:scale-110 transition"></i>
+            </div>
+            <div class="font-serif font-bold text-slatewarm-900 text-lg">Vocabulary & Idioms</div>
+            <p class="text-[11px] text-stone-600 mt-0.5">B2–C2 words, UK audio & Russian links</p>
+          </div>
+
+          <div onclick="switchTab('fixes')" class="cursor-pointer p-4 rounded-2xl bg-autumn-50/95 border border-autumn-200 hover:border-autumn-400 transition shadow-sm group">
+            <div class="flex items-center justify-between text-autumn-700 mb-1">
+              <span class="text-[11px] font-mono font-semibold uppercase">15 Fixes</span>
+              <i data-lucide="wand-sparkles" class="w-4 h-4 group-hover:scale-110 transition"></i>
+            </div>
+            <div class="font-serif font-bold text-slatewarm-900 text-lg">Note-Taker Fixes</div>
+            <p class="text-[11px] text-stone-600 mt-0.5">Sorted spelling errors & 6 gentle polishes</p>
+          </div>
+
+          <div onclick="switchTab('places')" class="cursor-pointer p-4 rounded-2xl bg-parchment-50/95 border border-parchment-300 hover:border-sage-400 transition shadow-sm group">
+            <div class="flex items-center justify-between text-sage-700 mb-1">
+              <span class="text-[11px] font-mono font-semibold uppercase">4 Deep-Dives</span>
+              <i data-lucide="compass" class="w-4 h-4 group-hover:scale-110 transition"></i>
+            </div>
+            <div class="font-serif font-bold text-slatewarm-900 text-lg">Topics & Poem</div>
+            <p class="text-[11px] text-stone-600 mt-0.5">Azerbaijan wedding, Dr. Seuss poem & practice</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIMARY TAB NAVIGATION BAR -->
+    <nav class="sanctuary-card rounded-2xl p-2 flex flex-wrap items-center justify-between gap-2 no-print" aria-label="Lesson Sections">
+      <div class="flex flex-wrap items-center gap-1.5 w-full sm:w-auto">
+        <button onclick="switchTab('transcript')" id="tab-btn-transcript" class="tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 bg-sage-700 text-white shadow-sm">
+          <i data-lucide="message-square-quote" class="w-4 h-4"></i>
+          <span>1. Lesson Transcript & Inline Vocab</span>
+          <span class="px-2 py-0.5 text-[10px] rounded-full bg-white/20 text-white font-mono">00:00–52:20</span>
+        </button>
+
+        <button onclick="switchTab('vocab')" id="tab-btn-vocab" class="tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-stone-700 hover:bg-parchment-100">
+          <i data-lucide="book-marked" class="w-4 h-4 text-autumn-600"></i>
+          <span>2. Vocabulary Dictionary</span>
+          <span class="px-2 py-0.5 text-[10px] rounded-full bg-autumn-100 text-autumn-800 font-mono">58 Words</span>
+        </button>
+
+        <button onclick="switchTab('fixes')" id="tab-btn-fixes" class="tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-stone-700 hover:bg-parchment-100">
+          <i data-lucide="sparkles" class="w-4 h-4 text-sage-600"></i>
+          <span>3. Note-Taker Fixes & Gentle Notes</span>
+        </button>
+
+        <button onclick="switchTab('places')" id="tab-btn-places" class="tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-stone-700 hover:bg-parchment-100">
+          <i data-lucide="landmark" class="w-4 h-4 text-autumn-600"></i>
+          <span>4. Cultural Topics & Cadence Poem</span>
+        </button>
+
+        <button onclick="switchTab('practice')" id="tab-btn-practice" class="tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-stone-700 hover:bg-parchment-100">
+          <i data-lucide="coffee" class="w-4 h-4 text-sage-600"></i>
+          <span>5. Peaceful Practice</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- =================================================================== -->
+    <!-- TAB 1: FULL LESSON TRANSCRIPT WITH INLINE VOCABULARY & TIMESTAMPS   -->
+    <!-- =================================================================== -->
+    <section id="tab-panel-transcript" class="tab-panel space-y-6">
+      
+      <!-- Transcript Controls & Chapter Bar -->
+      <div class="sanctuary-card rounded-3xl p-5 sm:p-6 space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#e6decb] pb-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono uppercase tracking-widest text-sage-700 font-semibold">Interactive Conversation Transcript</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-full bg-autumn-100 text-autumn-800 font-medium">Spelling & Names Corrected</span>
+            </div>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900 mt-0.5">
+              Our Full Conversation — With Vocabulary Explained Right Where We Said It
+            </h2>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1">
+              Every underlined <span class="vocab-mark">vocabulary word</span> is interactive. Hover over it for a quick tooltip, or click it to inspect its full details, British pronunciation, and Russian connection in the side panel.
+            </p>
+          </div>
+
+          <!-- Search & Display Toggles -->
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <div class="relative">
+              <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+              <input id="transcript-search" type="text" oninput="filterTranscript()" placeholder="Search transcript or time..." class="pl-9 pr-3 py-1.5 rounded-xl bg-white border border-[#dfd0b5] text-xs text-stone-800 focus:outline-none focus:border-sage-600 w-48 sm:w-56" />
+            </div>
+
+            <select id="speaker-filter" onchange="filterTranscript()" class="px-3 py-1.5 rounded-xl bg-white border border-[#dfd0b5] text-xs font-medium text-stone-700 focus:outline-none">
+              <option value="all">Both Speakers</option>
+              <option value="Tikhonov">Tikhonov's Turns Only</option>
+              <option value="Lewis">Lewis's Turns Only</option>
+            </select>
+
+            <button onclick="toggleVocabHighlights()" id="btn-toggle-highlights" class="px-3 py-1.5 rounded-xl bg-autumn-100 text-autumn-800 border border-autumn-300 text-xs font-semibold transition flex items-center gap-1.5">
+              <i data-lucide="highlighter" class="w-3.5 h-3.5"></i>
+              <span>Vocab Highlights: On</span>
+            </button>
+
+            <button onclick="toggleAsrBadges()" id="btn-toggle-asr" class="px-3 py-1.5 rounded-xl bg-sage-100 text-sage-800 border border-sage-300 text-xs font-semibold transition flex items-center gap-1.5" title="Show or hide badges where the automated note-taker's spelling errors were fixed">
+              <i data-lucide="check-check" class="w-3.5 h-3.5"></i>
+              <span>Note-Taker Fixes: Visible</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Chapter Quick-Jump Pills -->
+        <div class="flex flex-wrap items-center gap-1.5 pt-1">
+          <span class="text-[11px] font-mono uppercase tracking-wider text-stone-500 mr-1">Chapters:</span>
+          <button onclick="scrollToChapter('chap-1')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            00:00 • I. Return to Thailand & Azerbaijan
+          </button>
+          <button onclick="scrollToChapter('chap-2')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            08:35 • II. The 400-Guest Village Wedding
+          </button>
+          <button onclick="scrollToChapter('chap-3')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            20:54 • III. Dr. Seuss Cadence Poem
+          </button>
+          <button onclick="scrollToChapter('chap-4')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            25:55 • IV. Heads-Up: Food & Video Games
+          </button>
+          <button onclick="scrollToChapter('chap-5')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            34:45 • V. Emotions & Abstract Concepts
+          </button>
+          <button onclick="scrollToChapter('chap-6')" class="px-2.5 py-1 rounded-lg bg-parchment-100 hover:bg-autumn-100 text-stone-700 hover:text-autumn-800 text-xs font-medium transition border border-parchment-200">
+            48:40 • VI. Film Festival & Homework
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Transcript Grid: Left (Conversation Stream) + Right (Sticky Vocabulary Inspector) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        <!-- Left 8 Cols: Full Conversation Stream -->
+        <div class="lg:col-span-8 space-y-4" id="transcript-stream-container">
+          <!-- Rendered dynamically by JS from complete cleaned transcript data -->
+        </div>
+
+        <!-- Right 4 Cols: Sticky Live Vocabulary Inspector & Quick Guide -->
+        <aside class="lg:col-span-4 lg:sticky lg:top-20 space-y-4">
+          
+          <!-- Active Word Inspector Card -->
+          <div class="sanctuary-card rounded-3xl p-5 sm:p-6 border-t-4 border-t-autumn-500 space-y-4" id="vocab-inspector-card">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] font-mono uppercase tracking-widest text-autumn-700 font-semibold flex items-center gap-1.5">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5"></i>
+                Vocabulary Spotlight
+              </span>
+              <span id="insp-time" class="px-2.5 py-0.5 rounded-full bg-parchment-100 border border-parchment-300 font-mono text-xs text-stone-700">
+                🕒 02:36
+              </span>
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <h3 id="insp-word" class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900">outstanding</h3>
+                <button id="insp-audio-btn" onclick="speakWord('outstanding')" class="p-2.5 rounded-xl bg-sage-100 hover:bg-sage-200 text-sage-800 transition shrink-0" title="Listen in British English">
+                  <i data-lucide="volume-2" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <div class="flex flex-wrap items-center gap-2 mt-1">
+                <span id="insp-ipa" class="text-xs font-mono text-stone-500">/ˌaʊtˈstæn.dɪŋ/</span>
+                <span id="insp-pos" class="px-2 py-0.5 text-[11px] rounded-md bg-parchment-100 text-stone-700 font-medium">adjective</span>
+                <span id="insp-level" class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800 font-mono font-semibold">B2 / C1</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-parchment-50 border border-parchment-200 space-y-1.5">
+              <div class="text-[11px] font-mono uppercase tracking-wider text-stone-500">Meaning & Nuance</div>
+              <p id="insp-def" class="text-xs sm:text-sm text-slatewarm-800 leading-relaxed">
+                Exceptionally good, striking, or impressive—literally "standing out" above everything else around it.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-sage-50/80 border border-sage-200 space-y-1.5">
+              <div class="text-[11px] font-mono uppercase tracking-wider text-sage-700">How It Was Used in Our Lesson</div>
+              <p id="insp-quote" class="text-xs italic text-stone-700 leading-relaxed">
+                "Baku, the capital, is much prettier, more developed, more interesting—and the nature is outstanding."
+              </p>
+            </div>
+
+            <div class="flex items-center justify-between pt-1 text-xs border-t border-[#e6decb]">
+              <span class="text-stone-500">Russian equivalent:</span>
+              <span id="insp-es" class="font-semibold text-sage-800">🇷🇺 выдающийся / потрясающий</span>
+            </div>
+          </div>
+
+          <!-- Quick Legend & Reassurance Box for Tikhonov -->
+          <div class="sanctuary-card rounded-3xl p-5 space-y-3">
+            <div class="flex items-center gap-2 text-sage-800 font-serif font-bold text-lg">
+              <i data-lucide="heart-handshake" class="w-5 h-5 text-autumn-600"></i>
+              <span>A Gentle Note for You</span>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Today you showed fantastic communicative agility! When Lewis interrupted at <strong>02:36</strong> to introduce <em>"outstanding"</em>, you immediately woven it into your own sentence four minutes later at <strong>06:58</strong> (<em>"And the nature is outstanding!"</em>).
+            </p>
+            <p class="text-xs text-stone-600 leading-relaxed">
+              Your creative descriptions in the Heads-Up game—like using <strong>Thanos balancing his knife in Avengers: Endgame</strong> to explain <em>"balance"</em>—show how strong your active communication instincts already are.
+            </p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 2: VOCABULARY & IDIOMS EXPLORER (58 FLAGGED WORDS BY TIMESTAMP) -->
+    <!-- =================================================================== -->
+    <section id="tab-panel-vocab" class="tab-panel hidden space-y-6">
+      <div class="sanctuary-card rounded-3xl p-6 sm:p-8 space-y-5">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#e6decb] pb-5">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-autumn-700 font-semibold">Timestamped Lexicon • 58 Flagged Items</span>
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900 mt-1">
+              Vocabulary, Idioms & Expressions from Lesson 01
+            </h2>
+            <p class="text-xs sm:text-sm text-stone-600 mt-1">
+              Every word includes the exact timestamp when we said it. Click the timestamp badge (<strong>🕒 MM:SS ↗</strong>) on any card to jump straight to that moment in the transcript!
+            </p>
+          </div>
+
+          <!-- Search & Level Filter -->
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="relative">
+              <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+              <input id="vocab-search" type="text" oninput="renderVocabGrid()" placeholder="Search word, Russian, time..." class="pl-9 pr-3 py-2 rounded-xl bg-white border border-[#dfd0b5] text-xs text-stone-800 focus:outline-none focus:border-sage-600 w-52" />
+            </div>
+
+            <select id="vocab-level-filter" onchange="renderVocabGrid()" class="px-3 py-2 rounded-xl bg-white border border-[#dfd0b5] text-xs font-medium text-stone-700">
+              <option value="all">All Levels (B2–C2)</option>
+              <option value="C2">C2 Mastery / Literary</option>
+              <option value="C1">C1 Advanced</option>
+              <option value="B2">B2 Upper-Intermediate</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="setVocabCategory('all')" id="vcat-all" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-sage-700 text-white transition">
+            All 58 Flagged Words
+          </button>
+          <button onclick="setVocabCategory('travel')" id="vcat-travel" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition">
+            🏔️ Travel, Weddings & Culture
+          </button>
+          <button onclick="setVocabCategory('rhythm')" id="vcat-rhythm" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition">
+            🎭 Rhythm, Poetry & Speech
+          </button>
+          <button onclick="setVocabCategory('emotions')" id="vcat-emotions" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition">
+            💭 Emotions & Character
+          </button>
+          <button onclick="setVocabCategory('abstract')" id="vcat-abstract" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition">
+            🧠 Abstract Concepts & Food
+          </button>
+          <button onclick="setVocabCategory('idioms')" id="vcat-idioms" class="vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition">
+            ✨ Idioms & Phrasal Verbs
+          </button>
+        </div>
+
+        <!-- Vocabulary Cards Grid -->
+        <div id="vocab-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+          <!-- Populated dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 3: NOTE-TAKER SPELLING FIXES & GENTLE PHRASING REFINEMENTS      -->
+    <!-- =================================================================== -->
+    <section id="tab-panel-fixes" class="tab-panel hidden space-y-6">
+      
+      <!-- Part A: Gentle Phrasing Refinements & Strengths for Tikhonov -->
+      <div class="sanctuary-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <div class="border-b border-[#e6decb] pb-4">
+          <span class="text-xs font-mono uppercase tracking-widest text-sage-700 font-semibold">Supportive Language Notes</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900 mt-1">
+            Your Natural Strengths & 6 Gentle Phrasing Polishes
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1">
+            First, let's celebrate 6 moments where your vocabulary adoption, storytelling, and creative paraphrasing shone today—followed by 6 gentle, high-impact grammar and phrasing upgrades.
+          </p>
+        </div>
+
+        <!-- Tikhonov's Highlights Banner -->
+        <div class="p-5 rounded-2xl bg-sage-50/90 border border-sage-200 space-y-3">
+          <div class="flex items-center gap-2 text-sage-800 font-serif font-bold text-xl">
+            <i data-lucide="award" class="w-5 h-5 text-autumn-600"></i>
+            <span>Your Natural Strengths & Communicative Wins Today</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">06:58</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"And the nature is outstanding!"</div>
+              <p class="text-stone-600 mt-0.5">Instant active adoption! You learned <em>outstanding</em> at 02:36 and used it naturally in context four minutes later.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">07:10</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"really similar to Turkish cuisine"</div>
+              <p class="text-stone-600 mt-0.5">Elevated B2 vocabulary choice using <em>cuisine</em> instead of simply repeating <em>food</em>.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">17:09</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"It was a tricky one!"</div>
+              <p class="text-stone-600 mt-0.5">Spot-on, idiomatic reaction after outsmarting Lewis in the "Two Truths and One Lie" wedding game.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">33:17</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"It's a pixel game about having your own farm"</div>
+              <p class="text-stone-600 mt-0.5">Concise, crystal-clear circumlocution that allowed Lewis to guess <em>Stardew Valley</em> in 4 seconds!</p>
+            </div>
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">44:15</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"My active language is not as good as my passive"</div>
+              <p class="text-stone-600 mt-0.5">Very articulate linguistic self-awareness explaining the gap between passive recognition and active recall.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-white/90 border border-sage-200">
+              <span class="font-mono text-[11px] text-sage-700">46:39</span>
+              <div class="font-bold text-slatewarm-900 mt-0.5">"Thanos had a knife on his hand... Balance!"</div>
+              <p class="text-stone-600 mt-0.5">Brilliant lateral thinking—using a visual scene from <em>Avengers: Endgame</em> to convey an abstract concept.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Gentle Polishes Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="gentle-polishes-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Part B: The 15 AI Note-Taker Spelling & Mishearing Fixes -->
+      <div class="sanctuary-card rounded-3xl p-6 sm:p-8 space-y-5">
+        <div class="border-b border-[#e6decb] pb-4">
+          <span class="text-xs font-mono uppercase tracking-widest text-autumn-700 font-semibold">Transcript Clean-Up Log • 15 Fixes</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900 mt-1">
+            How We Sorted Out the Automated Note-Taker's Spelling Mistakes
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1">
+            Automated speech-to-text programs often mishear video games (like <em>Stardew Valley</em>, <em>Brawl Stars</em>, and <em>Sci-Fi</em>), author names (<em>Dr. Seuss</em>), and everyday phrases (hearing <em>"In a very big restaurant"</em> as <em>"In Avera Beach Restaurant"</em>!). Here is every place where the raw note-taker got confused and what we actually said:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="asr-fixes-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 4: CULTURAL PLACES, WEDDING STORIES & DR. SEUSS CADENCE POEM    -->
+    <!-- =================================================================== -->
+    <section id="tab-panel-places" class="tab-panel hidden space-y-6">
+      <div class="sanctuary-card rounded-3xl p-6 sm:p-8 space-y-6">
+        <div class="border-b border-[#e6decb] pb-4">
+          <span class="text-xs font-mono uppercase tracking-widest text-autumn-700 font-semibold">Cultural Deep-Dives & Homework Companion</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slatewarm-900 mt-1">
+            The Stories, Traditions & Rhythm Exercises We Explored Together
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 mt-1">
+            From Baku's architecture and a 400-guest Azerbaijani village wedding to Dr. Seuss's tongue-twisters and Canadian poutine, here are the 4 key cultural & linguistic themes from our lesson.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Topic 1: Azerbaijan & Turkish Linguistic Roots -->
+          <div class="sanctuary-subcard rounded-2xl p-6 space-y-3 border-l-4 border-l-autumn-500">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-autumn-700 font-semibold">01:48 – 08:35 • Caucasus & Linguistic Ties</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-autumn-100 text-autumn-800 text-[11px] font-medium">Travel & Language</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slatewarm-900">1. Baku, Azerbaijan & Turkish Mutual Intelligibility</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Traveling through Azerbaijan with a close friend whose family lives across the country opened doors to warm hospitality in every city. You noted how <strong>Baku</strong> is remarkably developed and scenic, and how <strong>Azerbaijani and Turkish</strong> belong to the same Oghuz Turkic branch—allowing locals to converse effortlessly, much like British and American English speakers, while sharing a rich culinary heritage.
+            </p>
+            <div class="p-3.5 rounded-xl bg-parchment-50 border border-parchment-200 text-xs text-stone-700 space-y-1">
+              <div class="font-semibold text-slatewarm-900">Your Observation in the Lesson:</div>
+              <p class="italic">"Baku, the capital, is much prettier, more developed, more interesting, and the nature is outstanding... Azerbaijani and Turkish are basically like American English and British English—very, very close to each other."</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">outstanding</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">cuisine</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">cadence</span>
+            </div>
+          </div>
+
+          <!-- Topic 2: The 400-Guest Village Wedding -->
+          <div class="sanctuary-subcard rounded-2xl p-6 space-y-3 border-l-4 border-l-sage-600">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-sage-700 font-semibold">08:52 – 20:54 • Two Truths & One Lie</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-sage-100 text-sage-800 text-[11px] font-medium">Wedding Traditions</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slatewarm-900">2. The 400-Guest Azerbaijani Wedding & Vietnamese Parallels</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              In your "Two Truths and One Lie" story, all three wild events were true—except there were <strong>over 400 guests</strong> rather than 300! A speeding car in the wedding convoy couldn't <strong>take the corner</strong>, a woman burned sacred herbs (<em>üzərlik</em> / wild rue) on a plate to <strong>ward off demons</strong>, and strangers smoked <strong>hookah</strong> at round tables because a huge guest list is a symbol of <strong>prestigious</strong> hospitality—just like 1,000-guest weddings in Vietnam.
+            </p>
+            <div class="p-3.5 rounded-xl bg-parchment-50 border border-parchment-200 text-xs text-stone-700 space-y-1">
+              <div class="font-semibold text-slatewarm-900">Memorable Quote from Our Talk:</div>
+              <p class="italic">"We talked with gestures and mimics and discussed really different topics—nobody understood each other's language, but they were really drunk, and I think that's the reason we could understand each other!"</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">ward off</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">wedding reception</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">take the corner</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">hookah</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">prestigious</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">gestures & mimics</span>
+            </div>
+          </div>
+
+          <!-- Topic 3: Dr. Seuss / Mr. Knox Cadence Poem (Homework Card) -->
+          <div class="sanctuary-subcard rounded-2xl p-6 space-y-3 border-l-4 border-l-autumn-400">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-autumn-700 font-semibold">21:05 – 25:50 & 51:10 • Rhythm & Cadence Homework</span>
+              <button onclick="speakWord('Do you speak in a house? Do you speak to a mouse? Do you mutter in the morning with a stutter and a yawning? Oh, the words inside your head, some are blue and some are red. Some are twisty, tangly tight, some will not come out right at night. You might say Zizzer-Zazzer-Zuzz when you meant to say who has. You might mix your past and present, which is bumpy and unpleasant. Do not fret, says Mr. Knox, standing on his speaking box. Every blunder, slip, and trip, every tongue-tied, tangled lip is the way your brain grows wide when those silly sounds collide. So speak it loud and speak it fast, speak the future, speak the past. For a word that is never spoken leaves the conversation broken. Give your tongue a little spin, that is how the words begin.')" class="px-2.5 py-1 rounded-lg bg-sage-700 hover:bg-sage-800 text-white text-[11px] font-semibold flex items-center gap-1 transition">
+                <i data-lucide="volume-2" class="w-3 h-3"></i> Listen Full Poem (UK)
+              </button>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slatewarm-900">3. Mr. Knox's Speaking Box (Dr. Seuss Rhythm Practice)</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Lewis asked you to read this poem aloud a few times over coffee before Thursday's lesson to build natural English <strong>cadence</strong> and speech rhythm:
+            </p>
+            <div class="p-4 rounded-xl bg-parchment-50 border border-parchment-200 text-xs sm:text-[13px] font-serif text-slatewarm-900 space-y-2 leading-relaxed">
+              <p><em>"Do you speak in a house? Do you speak to a mouse?<br/>Do you <strong>mutter</strong> in the morning with a <strong>stutter</strong> and a yawning?"</em></p>
+              <p><em>"Oh, the words inside your head, some are blue and some are red.<br/>Some are twisty, tangly tight; some won't come out right at night."</em></p>
+              <p><em>"You might say 'Zizzer-Zazzer-Zuzz' when you meant to say 'Who has?'<br/>You might mix your past and present, which is bumpy and unpleasant."</em></p>
+              <p><em>"Do not <strong>fret</strong>, says Mr. Knox, standing on his speaking box.<br/>Every <strong>blunder</strong>, slip, and trip, every <strong>tongue-tied</strong>, tangled lip<br/>Is the way your brain grows wide when those silly sounds <strong>collide</strong>."</em></p>
+              <p><em>"So speak it loud and speak it fast! Speak the future, speak the past!<br/>For a word that's never spoken leaves the conversation broken.<br/>Give your tongue a little spin—that is how the words begin!"</em></p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">mutter</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">stutter</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">fret</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">blunder</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">tongue-tied</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-sage-100 text-sage-800">collide</span>
+            </div>
+          </div>
+
+          <!-- Topic 4: Active Vernacular & Speed-Thinking -->
+          <div class="sanctuary-subcard rounded-2xl p-6 space-y-3 border-l-4 border-l-sage-500">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-sage-700 font-semibold">26:00 – 48:35 • Heads-Up Speed Game</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-sage-100 text-sage-800 text-[11px] font-medium">Fluency & Recall</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slatewarm-900">4. Bridging Passive Knowledge & Active Vernacular</h3>
+            <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              During the Heads-Up rounds (covering <em>Food</em>, <em>Video Games</em>, <em>Emotions</em>, and <em>Abstract Concepts</em>), you pointed out a universal challenge for intermediate-to-advanced learners: recognizing words like <strong>wisdom</strong>, <strong>courage</strong>, or <strong>tranquil</strong> when reading, yet finding them hard to summon under time pressure. Speed-paraphrasing trains your brain pathways to move words into your active <strong>vernacular</strong>.
+            </p>
+            <div class="p-3.5 rounded-xl bg-parchment-50 border border-parchment-200 text-xs text-stone-700 space-y-1">
+              <div class="font-semibold text-slatewarm-900">Key Takeaway from Our Discussion:</div>
+              <p class="italic">"When I see, read, or listen to these words, I know them and understand them. But my active language is not as good as my passive... Today's main goal is to get your brain navigating the English language quickly."</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">vernacular</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">wisdom</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">smug</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">tranquil</span>
+              <span class="px-2 py-0.5 text-[11px] rounded-md bg-autumn-100 text-autumn-800">draw a blank</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- TAB 5: PEACEFUL PRACTICE SANCTUARY (FLASHCARDS & REFLECTION)        -->
+    <!-- =================================================================== -->
+    <section id="tab-panel-practice" class="tab-panel hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left 6 Cols: Calm Flashcard Deck -->
+        <div class="lg:col-span-6 sanctuary-card rounded-3xl p-6 sm:p-8 space-y-5 flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono uppercase tracking-widest text-sage-700 font-semibold">Calm Memory Cards</span>
+              <span id="fc-counter" class="text-xs font-mono text-stone-500">Card 1 of 12</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slatewarm-900">Active Vernacular Flashcards</h3>
+            <p class="text-xs text-stone-600">Click the card to flip between the word, its definition, how we used it in class, and its Russian equivalent.</p>
+          </div>
+
+          <div onclick="flipFlashcard()" class="cursor-pointer sanctuary-subcard rounded-2xl p-7 min-h-[240px] flex flex-col items-center justify-center text-center space-y-3 border-2 border-[#dfd0b5] hover:border-autumn-400 transition select-none">
+            <span id="fc-badge" class="px-2.5 py-0.5 rounded-full bg-autumn-100 text-autumn-800 text-[11px] font-mono">02:36 • adjective (B2)</span>
+            <h4 id="fc-front-title" class="font-serif text-3xl font-bold text-slatewarm-900">outstanding</h4>
+            <p id="fc-sub" class="text-xs sm:text-sm text-stone-600 max-w-md leading-relaxed">
+              Click anywhere on this card to reveal the meaning, lesson quote & Russian equivalent
+            </p>
+            <div id="fc-back-details" class="hidden space-y-2 pt-2 border-t border-parchment-200 w-full">
+              <p id="fc-quote" class="text-xs italic text-sage-800"></p>
+              <p id="fc-es" class="text-xs font-semibold text-autumn-700"></p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 pt-2">
+            <button onclick="prevFlashcard()" class="px-4 py-2 rounded-xl bg-parchment-100 hover:bg-parchment-200 text-xs font-semibold text-stone-700 flex items-center gap-1.5 transition">
+              <i data-lucide="arrow-left" class="w-4 h-4"></i> Previous
+            </button>
+            <button onclick="speakCurrentFlashcard()" class="px-4 py-2 rounded-xl bg-sage-100 hover:bg-sage-200 text-xs font-semibold text-sage-800 flex items-center gap-1.5 transition">
+              <i data-lucide="volume-2" class="w-4 h-4"></i> Listen (UK)
+            </button>
+            <button onclick="nextFlashcard()" class="px-4 py-2 rounded-xl bg-sage-700 hover:bg-sage-800 text-xs font-semibold text-white flex items-center gap-1.5 transition">
+              Next <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right 6 Cols: Interactive Context Quiz -->
+        <div class="lg:col-span-6 sanctuary-card rounded-3xl p-6 sm:p-8 space-y-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-widest text-autumn-700 font-semibold">No-Pressure Review</span>
+              <h3 class="font-serif text-2xl font-bold text-slatewarm-900 mt-0.5">Match the Word to Our Conversation</h3>
+            </div>
+            <span id="quiz-score-badge" class="px-3 py-1 rounded-full bg-sage-100 text-sage-800 text-xs font-mono font-semibold">0 / 6 Completed</span>
+          </div>
+
+          <div id="quiz-container" class="space-y-4 max-h-[420px] overflow-y-auto pr-1">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Thoughtful Prompts for Thursday's Lesson -->
+      <div class="sanctuary-card rounded-3xl p-6 sm:p-8 space-y-4">
+        <div class="flex items-center gap-2 text-autumn-800 font-serif font-bold text-2xl">
+          <i data-lucide="coffee" class="w-5 h-5 text-autumn-600"></i>
+          <span>3 Peaceful Prompts & Practice Ideas for Thursday's Class</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
+          <div class="sanctuary-subcard rounded-2xl p-5 space-y-2">
+            <span class="text-[11px] font-mono uppercase text-sage-700 font-semibold">Prompt 01 • Rhythm & Cadence</span>
+            <h4 class="font-serif font-bold text-lg text-slatewarm-900">Read Mr. Knox Aloud Over Coffee</h4>
+            <p class="text-stone-600 leading-relaxed">
+              In your spare time while having a coffee, read the <em>Dr. Seuss / Mr. Knox</em> poem in <strong>Tab 4</strong> aloud two or three times. Notice how the rhyming beat pulls your voice forward without stopping!
+            </p>
+          </div>
+          <div class="sanctuary-subcard rounded-2xl p-5 space-y-2">
+            <span class="text-[11px] font-mono uppercase text-autumn-700 font-semibold">Prompt 02 • Active Vernacular</span>
+            <h4 class="font-serif font-bold text-lg text-slatewarm-900">5 Words to Use on Thursday</h4>
+            <p class="text-stone-600 leading-relaxed">
+              Try picking 5 words from today—such as <strong>ward off</strong>, <strong>take the corner</strong>, <strong>smug</strong>, <strong>tranquil</strong>, and <strong>vernacular</strong>—and weave at least two of them into our conversation on Thursday.
+            </p>
+          </div>
+          <div class="sanctuary-subcard rounded-2xl p-5 space-y-2">
+            <span class="text-[11px] font-mono uppercase text-sage-700 font-semibold">Prompt 03 • Travel Comparison</span>
+            <h4 class="font-serif font-bold text-lg text-slatewarm-900">Baku vs. Georgia & Thailand</h4>
+            <p class="text-stone-600 leading-relaxed">
+              You mentioned that you found Azerbaijan much more developed and interesting than Georgia. On Thursday, tell Lewis about one place or dish in Baku that completely <strong>blew your mind</strong>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-xs text-stone-500 border-t border-[#e6decb]/80 mt-8 no-print">
+    <p class="font-serif italic text-base text-slatewarm-800 mb-1">"Give your tongue a little spin—that is how the words begin!" — Lesson 01 Sanctuary prepared for Tikhonov V.</p>
+    <p>With calm autumn breezes • Corrected 52-Minute Transcript, Timestamps & 58 Vocabulary Notes</p>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT: VOCABULARY DATA, FULL TRANSCRIPT, AUDIO & AUTUMN BREEZE   -->
+  <!-- ===================================================================== -->
+  <script>
+    // -------------------------------------------------------------------------
+    // 1. COMPLETE VOCABULARY DICTIONARY (58 FLAGGED ITEMS WITH TIMESTAMPS)
+    // -------------------------------------------------------------------------
+    const VOCAB_DB = {
+      "cadence": {
+        word: "cadence",
+        ipa: "/ˈkeɪ.dəns/",
+        pos: "noun",
+        level: "C1",
+        time: "01:32",
+        turnId: "turn-7",
+        cat: "rhythm",
+        def: "The natural rhythm, rise and fall, and musical flow of a speaker's voice.",
+        quote: "Lewis (01:32): \"So we're starting with rhythm, cadence—getting sped up a little bit.\"",
+        es: "ритмика речи / интонационный рисунок / каденция"
+      },
+      "outstanding": {
+        word: "outstanding",
+        ipa: "/ˌaʊtˈstæn.dɪŋ/",
+        pos: "adjective",
+        level: "B2",
+        time: "02:36",
+        turnId: "turn-9",
+        cat: "travel",
+        def: "Exceptionally good, striking, or impressive—literally 'standing out' above everything else.",
+        quote: "Lewis (02:36): \"I'm going to interrupt—outstanding. Out-standing.\" / Tikhonov (06:58): \"And the nature is outstanding.\"",
+        es: "выдающийся / потрясающий / великолепный"
+      },
+      "pull-up": {
+        word: "pull up (on screen)",
+        ipa: "/pʊl ʌp/",
+        pos: "phrasal verb",
+        level: "B2",
+        time: "02:51",
+        turnId: "turn-11",
+        cat: "idioms",
+        def: "To open, retrieve, or display a file, webpage, or document on a computer screen.",
+        quote: "Lewis (02:51): \"So I'm just going to pull up someone else's notes quite quickly.\"",
+        es: "открыть (на экране) / вывести на экран"
+      },
+      "annotation": {
+        word: "annotation",
+        ipa: "/ˌæn.əˈteɪ.ʃən/",
+        pos: "noun",
+        level: "C1",
+        time: "03:22",
+        turnId: "turn-13",
+        cat: "rhythm",
+        def: "Explanatory notes, comments, and vocabulary highlights added to a text or transcript.",
+        quote: "Lewis (03:22): \"I don't record your visuals or your audio. It's just the annotation of the lesson.\"",
+        es: "аннотация / примечания / разметка текста"
+      },
+      "blew-my-mind": {
+        word: "blew my mind",
+        ipa: "/bluː maɪ maɪnd/",
+        pos: "idiom",
+        level: "B2",
+        time: "04:35",
+        turnId: "turn-15",
+        cat: "idioms",
+        def: "Completely amazed, astonished, or overwhelmed me with how impressive or unexpected something was.",
+        quote: "Lewis (04:35): \"So like, this is a C1 word, or going back on 'blew my mind' is a B2 idiom.\"",
+        es: "взорвало мне мозг / поразило до глубины души"
+      },
+      "go-over": {
+        word: "go over",
+        ipa: "/ɡəʊ ˈəʊ.vər/",
+        pos: "phrasal verb",
+        level: "B2",
+        time: "04:35",
+        turnId: "turn-15",
+        cat: "idioms",
+        def: "To review, examine, or study something carefully to make sure you remember it.",
+        quote: "Lewis (04:35): \"When you get the text two hours later and you want to go over it, you'll get more information.\"",
+        es: "повторить / просмотреть / разобрать"
+      },
+      "get-rid-of": {
+        word: "get rid of",
+        ipa: "/ɡet rɪd ɒv/",
+        pos: "phrasal verb",
+        level: "B2",
+        time: "05:39",
+        turnId: "turn-17",
+        cat: "idioms",
+        def: "To close, remove, or discard something that is no longer needed.",
+        quote: "Lewis (05:39): \"Okay, let's get rid of this page.\"",
+        es: "избавиться от / закрыть / убрать"
+      },
+      "cuisine": {
+        word: "cuisine",
+        ipa: "/kwɪˈziːn/",
+        pos: "noun",
+        level: "B2",
+        time: "07:10",
+        turnId: "turn-20",
+        cat: "travel",
+        def: "A characteristic style or tradition of cooking from a particular country or culture.",
+        quote: "Tikhonov (07:10): \"I love Azerbaijani food because it's really similar to Turkish cuisine.\"",
+        es: "кухня (кулинарные традиции страны)"
+      },
+      "ward-off": {
+        word: "ward off",
+        ipa: "/wɔːd ɒf/",
+        pos: "phrasal verb",
+        level: "C1",
+        time: "10:24",
+        turnId: "turn-27",
+        cat: "idioms",
+        def: "To keep away, repel, or protect against danger, illness, bad luck, or evil spirits.",
+        quote: "Lewis (10:24): \"To ward off demons—just like in The Witcher video game, they ward off demons.\"",
+        es: "отгонять / отводить (злых духов, беду)"
+      },
+      "wedding-reception": {
+        word: "wedding reception",
+        ipa: "/ˈwed.ɪŋ rɪˌsep.ʃən/",
+        pos: "noun",
+        level: "B2",
+        time: "11:30",
+        turnId: "turn-29",
+        cat: "travel",
+        def: "The social party, banquet, dancing, and celebration held after the formal marriage ceremony.",
+        quote: "Lewis (11:30): \"Were there 300 people at the wedding reception, or 300 people at the wedding?\"",
+        es: "свадебный банкет / свадебный приём"
+      },
+      "ceremony": {
+        word: "ceremony",
+        ipa: "/ˈser.ɪ.mə.ni/",
+        pos: "noun",
+        level: "B2",
+        time: "11:42",
+        turnId: "turn-31",
+        cat: "travel",
+        def: "The formal religious or civil marriage ritual itself (as opposed to the party afterwards).",
+        quote: "Lewis (11:42): \"The wedding reception is anything except for the ceremony—eating, drinking, the party.\"",
+        es: "торжественная церемония (бракосочетания)"
+      },
+      "i-take-it": {
+        word: "I take it (that...)",
+        ipa: "/aɪ teɪk ɪt/",
+        pos: "idiom",
+        level: "B2",
+        time: "12:11",
+        turnId: "turn-33",
+        cat: "idioms",
+        def: "I assume or suppose (a natural conversational way to confirm something you believe is true).",
+        quote: "Lewis (12:11): \"And the wedding reception, where was it? Was it in a restaurant, I take it?\"",
+        es: "я так понимаю / полагаю"
+      },
+      "take-the-corner": {
+        word: "take the corner",
+        ipa: "/teɪk ðə ˈkɔː.nər/",
+        pos: "collocation / idiom",
+        level: "B2",
+        time: "13:22",
+        turnId: "turn-39",
+        cat: "idioms",
+        def: "To drive or steer a vehicle around a bend or turn in the road.",
+        quote: "Lewis (13:22): \"We say: 'It couldn't take the corner.'\" / Tikhonov (13:28): \"Yeah, it couldn't take the corner.\"",
+        es: "вписаться в поворот / войти в поворот"
+      },
+      "bride-and-groom": {
+        word: "bride and groom",
+        ipa: "/braɪd ænd ɡruːm/",
+        pos: "noun phrase",
+        level: "B2",
+        time: "13:43",
+        turnId: "turn-40",
+        cat: "travel",
+        def: "The woman (bride) and man (groom) who are getting married on their wedding day.",
+        quote: "Tikhonov (13:43): \"After the speech and after taking photos with the bride and groom, she came with a burning plate.\"",
+        es: "жених и невеста (в англ. порядке: невеста и жених)"
+      },
+      "hookah": {
+        word: "hookah",
+        ipa: "/ˈhʊk.ə/",
+        pos: "noun",
+        level: "B2",
+        time: "16:11",
+        turnId: "turn-44",
+        cat: "travel",
+        def: "An Oriental water-pipe with a long flexible tube used for smoking flavoured tobacco (also called shisha).",
+        quote: "Tikhonov (16:11): \"Hookah, hookah! Yeah, they were just sitting and smoking hookah.\"",
+        es: "кальян"
+      },
+      "loads-of": {
+        word: "loads of",
+        ipa: "/ləʊdz ɒv/",
+        pos: "idiom",
+        level: "B2",
+        time: "16:18",
+        turnId: "turn-45",
+        cat: "idioms",
+        def: "A very large number or amount of something (very common in casual British English).",
+        quote: "Lewis (16:18): \"Loads and loads and loads of round tables.\"",
+        es: "куча / уйма / огромное количество"
+      },
+      "prestigious": {
+        word: "prestigious",
+        ipa: "/preˈstɪdʒ.əs/",
+        pos: "adjective",
+        level: "C1",
+        time: "16:34",
+        turnId: "turn-47",
+        cat: "travel",
+        def: "Inspiring respect and admiration; having high social status, luxury, or reputation.",
+        quote: "Lewis (16:34): \"The more people you invite, the more prestigious: 'Look at us!'\"",
+        es: "престижный / статусный"
+      },
+      "in-advance": {
+        word: "in advance",
+        ipa: "/ɪn ədˈvɑːns/",
+        pos: "phrase",
+        level: "B2",
+        time: "16:45",
+        turnId: "turn-47",
+        cat: "idioms",
+        def: "Beforehand; ahead of time, before an event happens.",
+        quote: "Lewis (16:45): \"The groom and the bride, they pay in advance.\"",
+        es: "заранее / заблаговременно / авансом"
+      },
+      "tricky": {
+        word: "tricky",
+        ipa: "/ˈtrɪk.i/",
+        pos: "adjective",
+        level: "B2",
+        time: "17:09",
+        turnId: "turn-48",
+        cat: "idioms",
+        def: "Cleverly deceptive, subtle, or difficult to guess correctly.",
+        quote: "Tikhonov (17:09): \"It was a tricky one!\" (after revealing there were 400+ guests rather than 300)",
+        es: "хитрый / с подвохом / непростой"
+      },
+      "falling-apart": {
+        word: "fall apart",
+        ipa: "/fɔːl əˈpɑːt/",
+        pos: "phrasal verb",
+        level: "B2",
+        time: "18:25",
+        turnId: "turn-49",
+        cat: "idioms",
+        def: "To break into pieces, disintegrate, or collapse completely.",
+        quote: "Lewis (18:25): \"Someone was burning a brand-new motorbike... It was brand new, and just falling apart.\"",
+        es: "разваливаться на части / распадаться"
+      },
+      "gestures": {
+        word: "gestures",
+        ipa: "/ˈdʒes.tʃəz/",
+        pos: "noun (plural)",
+        level: "B2",
+        time: "19:30",
+        turnId: "turn-50",
+        cat: "travel",
+        def: "Expressive movements of the hands, arms, or head used to communicate ideas without words.",
+        quote: "Tikhonov (19:30): \"We talked with gestures and mimics and discussed really different topics.\"",
+        es: "жесты (жестикуляция)"
+      },
+      "mimics": {
+        word: "mimics (facial expressions)",
+        ipa: "/ˈmɪm.ɪks/",
+        pos: "noun",
+        level: "B2",
+        time: "19:30",
+        turnId: "turn-50",
+        cat: "travel",
+        def: "Expressive facial movements and pantomime used to convey meaning (often called 'facial expressions' in English).",
+        quote: "Tikhonov (19:30): \"We talked like with gestures and mimics...\"",
+        es: "мимика / выражение лица"
+      },
+      "metabolize": {
+        word: "metabolize",
+        ipa: "/məˈtæb.əl.aɪz/",
+        pos: "verb",
+        level: "C1",
+        time: "20:17",
+        turnId: "turn-51",
+        cat: "travel",
+        def: "To process and break down substances (such as alcohol or food) chemically inside the body.",
+        quote: "Lewis (20:17): \"Two hours later, they're drunk—because many Vietnamese people cannot really metabolize alcohol quickly.\"",
+        es: "усваивать / перерабатывать (в организме, метаболизировать)"
+      },
+      "keep-up-with": {
+        word: "keep up with",
+        ipa: "/kiːp ʌp wɪð/",
+        pos: "phrasal verb",
+        level: "B2",
+        time: "20:31",
+        turnId: "turn-51",
+        cat: "idioms",
+        def: "To move, drink, work, or progress at the same speed or level as someone else.",
+        quote: "Lewis (20:31): \"And they are just trying to keep up with you.\"",
+        es: "не отставать от / держаться наравне с"
+      },
+      "mutter": {
+        word: "mutter",
+        ipa: "/ˈmʌt.ər/",
+        pos: "verb",
+        level: "B2",
+        time: "21:40",
+        turnId: "turn-53",
+        cat: "rhythm",
+        def: "To speak quietly in a low, indistinct voice with lips partly closed, often when sleepy or grumbling.",
+        quote: "Dr. Seuss Poem (21:40): \"Do you mutter in the morning with a stutter and a yawning?\"",
+        es: "бормотать / бубнить себе под нос"
+      },
+      "stutter": {
+        word: "stutter",
+        ipa: "/ˈstʌt.ər/",
+        pos: "noun / verb",
+        level: "B2",
+        time: "21:40",
+        turnId: "turn-53",
+        cat: "rhythm",
+        def: "Speaking with involuntary pauses, blocks, or rapid repetitions of the initial sounds of words.",
+        quote: "Dr. Seuss Poem (21:40): \"Do you mutter in the morning with a stutter and a yawning?\"",
+        es: "заикание / запинка в речи"
+      },
+      "fret": {
+        word: "fret (\"Do not fret\")",
+        ipa: "/fret/",
+        pos: "verb",
+        level: "C1",
+        time: "21:55",
+        turnId: "turn-53",
+        cat: "rhythm",
+        def: "To feel anxious, worried, or unhappy about something minor ('Do not fret' = 'Don't worry at all').",
+        quote: "Dr. Seuss Poem (21:55): \"'Do not fret,' says Mr. Knox, standing on his speaking box.\"",
+        es: "тревожиться / переживать («Не переживай!»)"
+      },
+      "stanza": {
+        word: "stanza",
+        ipa: "/ˈstæn.zə/",
+        pos: "noun",
+        level: "C1",
+        time: "22:41",
+        turnId: "turn-54",
+        cat: "rhythm",
+        def: "A grouped set of lines in a poem, separated from other groups by a space (a poetic verse).",
+        quote: "Lewis (22:41): \"We'll do it line by line—kind of like stanza by stanza.\"",
+        es: "строфа / куплет стихотворения"
+      },
+      "blunder": {
+        word: "blunder",
+        ipa: "/ˈblʌn.dər/",
+        pos: "noun",
+        level: "C1",
+        time: "24:15",
+        turnId: "turn-60",
+        cat: "rhythm",
+        def: "A careless, clumsy, or awkward mistake made while speaking or acting.",
+        quote: "Dr. Seuss Poem (24:15): \"Every blunder, slip, and trip, every tongue-tied, tangled lip...\"",
+        es: "оплошность / грубая ошибка / промах"
+      },
+      "tongue-tied": {
+        word: "tongue-tied",
+        ipa: "/ˈtʌŋ.taɪd/",
+        pos: "adjective",
+        level: "B2",
+        time: "24:15",
+        turnId: "turn-60",
+        cat: "rhythm",
+        def: "Unable to speak smoothly or clearly because of tricky sounds, excitement, or shyness.",
+        quote: "Dr. Seuss Poem (24:15): \"Every blunder, slip, and trip, every tongue-tied, tangled lip...\"",
+        es: "косноязычный / когда «язык заплетается»"
+      },
+      "collide": {
+        word: "collide",
+        ipa: "/kəˈlaɪd/",
+        pos: "verb",
+        level: "B2",
+        time: "24:15",
+        turnId: "turn-60",
+        cat: "rhythm",
+        def: "To crash or bump into each other with force.",
+        quote: "Dr. Seuss Poem (24:15): \"...is the way your brain grows wide when those silly sounds collide.\"",
+        es: "сталкиваться"
+      },
+      "take-it-in-turns": {
+        word: "take it in turns",
+        ipa: "/teɪk ɪt ɪn tɜːnz/",
+        pos: "idiom",
+        level: "B2",
+        time: "26:28",
+        turnId: "turn-66",
+        cat: "idioms",
+        def: "To alternate doing something one after another (American English: 'take turns').",
+        quote: "Lewis (26:28): \"So what I suggest is we take it in turns, okay?\"",
+        es: "делать по очереди / чередоваться"
+      },
+      "vice-versa": {
+        word: "vice versa",
+        ipa: "/ˌvaɪ.sə ˈvɜː.sə/",
+        pos: "adverb phrase",
+        level: "B2",
+        time: "27:03",
+        turnId: "turn-68",
+        cat: "idioms",
+        def: "With the main items in the preceding statement the other way around; conversely.",
+        quote: "Lewis (27:03): \"So I can see mine, but I can't see yours, and vice versa.\"",
+        es: "наоборот / и наоборот"
+      },
+      "gravy": {
+        word: "gravy",
+        ipa: "/ˈɡreɪ.vi/",
+        pos: "noun",
+        level: "B2",
+        time: "28:05",
+        turnId: "turn-72",
+        cat: "abstract",
+        def: "A warm, savoury brown sauce made from meat juices, stock, and a little flour.",
+        quote: "Lewis (28:05): \"It's a Canadian food—it's made with chips and cheese curds and gravy.\"",
+        es: "мясная подливка / соус грейви"
+      },
+      "poutine": {
+        word: "poutine",
+        ipa: "/puːˈtiːn/",
+        pos: "noun",
+        level: "B2",
+        time: "28:26",
+        turnId: "turn-74",
+        cat: "abstract",
+        def: "A famous Canadian comfort dish from Quebec consisting of French fries topped with fresh cheese curds and hot brown gravy.",
+        quote: "Lewis (28:26): \"It's called poutine.\" / Tikhonov (30:15): \"For me, 'poutine' sounded like the Russian President, you know?\"",
+        es: "пути́н (канадское блюдо из картофеля фри с сыром и подливкой)"
+      },
+      "pastry": {
+        word: "pastry",
+        ipa: "/ˈpeɪ.stri/",
+        pos: "noun",
+        level: "B2",
+        time: "28:33",
+        turnId: "turn-74",
+        cat: "abstract",
+        def: "Baked dough or sweet baked goods (such as tarts, croissants, or crisp golden waffles).",
+        quote: "Lewis (28:33): \"The next food item is an American dessert... it's quite thick, and it's a pastry, and they put caramel sauce and ice cream on top.\"",
+        es: "выпечка / кондитерское изделие из теста"
+      },
+      "join-the-dots": {
+        word: "join the dots",
+        ipa: "/dʒɔɪn ðə dɒts/",
+        pos: "idiom",
+        level: "C1",
+        time: "30:21",
+        turnId: "turn-82",
+        cat: "idioms",
+        def: "To connect separate clues or facts in your mind to understand the bigger picture (also 'connect the dots').",
+        quote: "Lewis (30:21): \"I didn't even join the dots when I said 'poutine'!\"",
+        es: "сложить два и два / провести параллель / связать факты"
+      },
+      "sci-fi": {
+        word: "sci-fi (science fiction)",
+        ipa: "/ˈsaɪ.faɪ/",
+        pos: "noun / adjective",
+        level: "B2",
+        time: "32:24",
+        turnId: "turn-89",
+        cat: "abstract",
+        def: "Science fiction (pronounced /ˈsaɪ.faɪ/, with a silent 'c')—stories or games featuring futuristic science and technology.",
+        quote: "Tikhonov (32:24): \"This game is sci-fi [Half-Life]... similar to Counter-Strike, but more modern and sci-fi [Valorant].\"",
+        es: "научная фантастика (произносится «сай-фай»)"
+      },
+      "impatient": {
+        word: "impatient",
+        ipa: "/ɪmˈpeɪ.ʃənt/",
+        pos: "adjective",
+        level: "B2",
+        time: "35:24",
+        turnId: "turn-99",
+        cat: "emotions",
+        def: "Restless, eager, and unable to wait calmly for something to happen.",
+        quote: "Lewis (35:24): \"When you can't wait—like a child wanting ice cream now—they are impatient.\"",
+        es: "нетерпеливый"
+      },
+      "wary": {
+        word: "wary",
+        ipa: "/ˈweə.ri/",
+        pos: "adjective",
+        level: "C1",
+        time: "35:32",
+        turnId: "turn-101",
+        cat: "emotions",
+        def: "Feeling or showing cautious alertness about possible dangers, strangers, or unfamiliar situations.",
+        quote: "Lewis (35:32): \"When you go somewhere like a new village, and you're a stranger, and people look at you and they're wary...\"",
+        es: "настороженный / осмотрительный"
+      },
+      "suspicious": {
+        word: "suspicious",
+        ipa: "/səˈspɪʃ.əs/",
+        pos: "adjective",
+        level: "B2",
+        time: "36:02",
+        turnId: "turn-103",
+        cat: "emotions",
+        def: "Feeling distrust or doubt toward someone; suspecting hidden motives.",
+        quote: "Tikhonov (35:50): \"They don't trust you, right?\" / Lewis (36:02): \"Suspicious!\"",
+        es: "подозрительный / недоверчивый"
+      },
+      "in-the-middle-of-nowhere": {
+        word: "in the middle of nowhere",
+        ipa: "/ɪn ðə ˈmɪd.əl ɒv ˈnəʊ.weər/",
+        pos: "idiom",
+        level: "B2",
+        time: "36:50",
+        turnId: "turn-107",
+        cat: "idioms",
+        def: "In a very remote, isolated rural place far away from cities or towns.",
+        quote: "Lewis (36:50): \"Because I go somewhere in Asia and it's in the middle of nowhere, and they look at me like this.\"",
+        es: "у чёрта на куличках / в глуши / вдали от цивилизации"
+      },
+      "nostalgia": {
+        word: "nostalgia",
+        ipa: "/nɒˈstæl.dʒə/",
+        pos: "noun",
+        level: "C1",
+        time: "38:00",
+        turnId: "turn-110",
+        cat: "emotions",
+        def: "A warm, sentimental longing or wistful affection for happy times in the past.",
+        quote: "Tikhonov (38:00): \"It's when you remember old times and you feel something warm in your soul.\" / Lewis: \"Nostalgia!\"",
+        es: "ностальгия / тёплая тоска по прошлому"
+      },
+      "tranquil": {
+        word: "tranquil",
+        ipa: "/ˈtræŋ.kwɪl/",
+        pos: "adjective",
+        level: "C1",
+        time: "38:26",
+        turnId: "turn-112",
+        cat: "emotions",
+        def: "Deeply calm, quiet, serene, and free from disturbance or stress.",
+        quote: "Lewis (38:26): \"Tranquil.\" / Tikhonov (38:29): \"Tranquil—oh, I didn't know this word! The card was 'calm'.\"",
+        es: "безмятежный / спокойный / тихий"
+      },
+      "content": {
+        word: "content (adjective)",
+        ipa: "/kənˈtent/",
+        pos: "adjective",
+        level: "B2",
+        time: "38:48",
+        turnId: "turn-114",
+        cat: "emotions",
+        def: "Peacefully happy and satisfied with what one has (stressed on the second syllable: /kənˈtent/, unlike the noun 'content' /ˈkɒn.tent/).",
+        quote: "Tikhonov (38:48): \"What is content?\" / Lewis (38:51): \"Content—when you're okay and happy with things: 'I'm content.'\"",
+        es: "довольный / удовлетворённый жизнью (ударение на 2-й слог)"
+      },
+      "triumph": {
+        word: "triumph",
+        ipa: "/ˈtraɪ.ʌmf/",
+        pos: "noun",
+        level: "C1",
+        time: "39:23",
+        turnId: "turn-116",
+        cat: "emotions",
+        def: "A great victory or achievement, and the joyful pride that results from it.",
+        quote: "Lewis (39:23): \"Triumph?\" (when guessing the emotion of pride and victory)",
+        es: "триумф / торжество победы"
+      },
+      "smug": {
+        word: "smug",
+        ipa: "/smʌɡ/",
+        pos: "adjective",
+        level: "C1",
+        time: "39:27",
+        turnId: "turn-117",
+        cat: "emotions",
+        def: "Showing annoying, excessive self-satisfaction, pride, and a sense of superiority over others.",
+        quote: "Tikhonov (39:20): \"Combines self-satisfaction, pride, and a sense of superiority—smug!\" / Lewis: \"Yeah, 'He's smug'—like 'It was because of me and my skills the project got done!'\"",
+        es: "самодовольный"
+      },
+      "wisdom": {
+        word: "wisdom",
+        ipa: "/ˈwɪz.dəm/",
+        pos: "noun",
+        level: "B2",
+        time: "40:34",
+        turnId: "turn-120",
+        cat: "abstract",
+        def: "Deep understanding, insight, and good judgment that come from life experience and age rather than textbooks.",
+        quote: "Lewis (40:34): \"Thai monks can have it—you ask them for advice in the temple and they give you wisdom.\" / Tikhonov (43:35): \"Because he knows many things and has lived for a long time—deep knowledge.\"",
+        es: "мудрость (жизненный опыт)"
+      },
+      "in-that-vein": {
+        word: "in that vein",
+        ipa: "/ɪn ðæt veɪn/",
+        pos: "idiom",
+        level: "C1",
+        time: "41:01",
+        turnId: "turn-122",
+        cat: "idioms",
+        def: "Of a similar style, theme, or line of thought; along those same lines.",
+        quote: "Tikhonov (40:59): \"Heroism?\" / Lewis (41:01): \"Hmm, it's in that vein, but some people have this and scared people do not...\"",
+        es: "в этом же духе / близко по смыслу"
+      },
+      "attribute": {
+        word: "attribute",
+        ipa: "/ˈæt.rɪ.bjuːt/",
+        pos: "noun",
+        level: "C1",
+        time: "41:17",
+        turnId: "turn-124",
+        cat: "abstract",
+        def: "A quality, character trait, or feature regarded as a natural part of someone's personality.",
+        quote: "Tikhonov (41:14): \"It's like your quality, right?\" / Lewis (41:17): \"Yeah, an attribute—you can have this.\"",
+        es: "качество / черта характера / свойство"
+      },
+      "courageous": {
+        word: "courageous (courage)",
+        ipa: "/kəˈreɪ.dʒəs/",
+        pos: "adjective",
+        level: "B2",
+        time: "43:57",
+        turnId: "turn-129",
+        cat: "emotions",
+        def: "Brave and fearless; having the inner strength ('courage' /ˈkʌr.ɪdʒ/) to face danger or difficulty.",
+        quote: "Lewis (43:57): \"When you have courage, you are brave—you're courageous.\"",
+        es: "смелый / отважный (courage — мужество, смелость)"
+      },
+      "cowardly": {
+        word: "cowardly",
+        ipa: "/ˈkaʊ.əd.li/",
+        pos: "adjective",
+        level: "B2",
+        time: "44:05",
+        turnId: "turn-129",
+        cat: "emotions",
+        def: "Lacking courage; shrinking back in fear when facing a challenge or danger (the opposite of courageous).",
+        quote: "Lewis (44:05): \"And some people do not have courage—they are cowardly.\"",
+        es: "трусливый / малодушный"
+      },
+      "vernacular": {
+        word: "vernacular",
+        ipa: "/vəˈnæk.jʊ.lər/",
+        pos: "noun",
+        level: "C2",
+        time: "44:31",
+        turnId: "turn-131",
+        cat: "rhythm",
+        def: "The everyday, natural language and active vocabulary that a person actually uses when speaking.",
+        quote: "Tikhonov (44:15): \"My active language is not as good as my passive.\" / Lewis (44:31): \"We would say your vernacular—it's the words you use.\"",
+        es: "активный словарный запас / живая разговорная речь"
+      },
+      "curiosity": {
+        word: "curiosity",
+        ipa: "/ˌkjʊə.riˈɒs.ə.ti/",
+        pos: "noun",
+        level: "B2",
+        time: "46:13",
+        turnId: "turn-133",
+        cat: "abstract",
+        def: "A strong desire to know, explore, or learn about something.",
+        quote: "Tikhonov (45:55): \"Someone has information or did something, and you really want to know about it—curiosity!\"",
+        es: "любопытство / любознательность"
+      },
+      "consistency": {
+        word: "consistency",
+        ipa: "/kənˈsɪs.tən.si/",
+        pos: "noun",
+        level: "C1",
+        time: "47:14",
+        turnId: "turn-138",
+        cat: "abstract",
+        def: "Steady, regular effort and reliability over a long period of time.",
+        quote: "Tikhonov (47:14): \"Consistency—close! You should do something for a long time with this quality to make results.\"",
+        es: "постоянство / последовательность / регулярность"
+      },
+      "draw-a-blank": {
+        word: "draw a blank",
+        ipa: "/drɔː ə blæŋk/",
+        pos: "idiom",
+        level: "C1",
+        time: "47:50",
+        turnId: "turn-139",
+        cat: "idioms",
+        def: "To be unable to remember or think of a word or answer in the moment, as if your mind went blank.",
+        quote: "Lewis (47:50): \"I pass, sorry—I'm drawing a blank!\" (Note-taker wrote: 'throwing a blank')",
+        es: "ничего не приходит в голову / вылетело из головы"
+      },
+      "patience": {
+        word: "patience",
+        ipa: "/ˈpeɪ.ʃəns/",
+        pos: "noun",
+        level: "B2",
+        time: "47:58",
+        turnId: "turn-140",
+        cat: "abstract",
+        def: "The ability to wait calmly or endure slow progress without getting angry, rushed, or frustrated.",
+        quote: "Tikhonov (47:58): \"It's patience! When you can do something for a long time and you are not raging or trying to do it fast.\"",
+        es: "терпение / выдержка"
+      },
+      "have-a-go": {
+        word: "have a go (at)",
+        ipa: "/hæv ə ɡəʊ/",
+        pos: "idiom",
+        level: "B2",
+        time: "51:36",
+        turnId: "turn-146",
+        cat: "idioms",
+        def: "To try or make an attempt at doing something without pressure (authentic British expression).",
+        quote: "Lewis (51:36): \"Just have a go at saying it, and the structure will help you with your cadence.\"",
+        es: "попробовать свои силы / попытаться прочитать"
+      }
+    };
+
+    function v(key, displayWord) {
+      const item = (typeof VOCAB_DB !== 'undefined' && VOCAB_DB[key]) ? VOCAB_DB[key] : null;
+      const label = displayWord || (item ? item.word : key);
+      return '<span class="vocab-mark" data-vkey="' + key + '" onclick="inspectVocab(\'' + key + '\')">' + label + '</span>';
+    }
+
+    function fixBadge(corrected, rawMistake) {
+      return '<span class="asr-fix-pill" title="Note-taker misheard \'' + corrected.replace(/'/g, "\\'") + '\' as \'' + rawMistake.replace(/'/g, "\\'") + '\'">✨ Fixed: "' + corrected + '" <span class="text-stone-400">(note-taker wrote: "' + rawMistake + '")</span></span>';
+    }
+
+    // -------------------------------------------------------------------------
+    // 2. COMPLETE CLEANED LESSON TRANSCRIPT (00:00 TO 52:20 • 6 CHAPTERS)
+    // -------------------------------------------------------------------------
+    const TRANSCRIPT_TURNS = [
+      // CHAPTER I: 00:00 - 08:35
+      {
+        id: "turn-1",
+        chapterId: "chap-1",
+        chapterTitle: "Chapter I • Welcome Back to Thailand, Travelling Through Azerbaijan & Turkish Linguistic Roots (00:00 – 08:35)",
+        speaker: "Lewis",
+        time: "00:00",
+        html: `Hey, how's it going? Long time no see! How are you doing?`
+      },
+      {
+        id: "turn-2",
+        speaker: "Tikhonov",
+        time: "00:03",
+        html: `Hello, hello, Lewis! I'm fine. How are you?`
+      },
+      {
+        id: "turn-3",
+        speaker: "Lewis",
+        time: "00:06",
+        html: `Yeah, not too bad. Very good, enjoying life. How's Thailand? I believe you're in Thailand—is that correct?`
+      },
+      {
+        id: "turn-4",
+        speaker: "Tikhonov",
+        time: "00:13",
+        html: `Yes, yes, yes. Sorry, could you please wait for a minute? I'll turn on my AirPods.`
+      },
+      {
+        id: "turn-5",
+        speaker: "Lewis",
+        time: "00:21",
+        html: `No problem. No problem at all. ... Hey, hello!`
+      },
+      {
+        id: "turn-6",
+        speaker: "Tikhonov",
+        time: "00:55",
+        html: `Yes, nice! Yeah, we had a lesson like a month ago, and then I tried different tutors, and then I went on my trip to <strong>Azerbaijan and Georgia</strong>. And it went on for a month. So now I'm back in Thailand, and I want to start studying English regularly.`
+      },
+      {
+        id: "turn-7",
+        speaker: "Lewis",
+        time: "01:32",
+        html: `Fantastic! So let's start. We already know where to begin—so we're starting with rhythm, ${v("cadence", "cadence")}, getting sped up a little bit. So tell me, what was your favourite thing about your trip? What did you love?`
+      },
+      {
+        id: "turn-8",
+        speaker: "Tikhonov",
+        time: "01:48",
+        html: `I was in Azerbaijan, and there were many amazing things about this country. I went with my friend, and he's originally Azerbaijani. He speaks his language, and he knows many people there. We visited different cities, and in all these cities we found some relatives of his, or some friends. And it was very nice—the people there were very kind, and there was amazing nature.`
+      },
+      {
+        id: "turn-9",
+        speaker: "Lewis",
+        time: "02:36",
+        html: `I would say—I'm going to interrupt—${v("outstanding", "outstanding")}. Out-standing.`
+      },
+      {
+        id: "turn-10",
+        speaker: "Tikhonov",
+        time: "02:45",
+        html: `Outstanding! Ah, outstanding. Okay, I see.`
+      },
+      {
+        id: "turn-11",
+        speaker: "Lewis",
+        time: "02:51",
+        html: `The reason why I'm going to interrupt more than normal is because I've changed my lesson format since we last spoke. Just so you know, I will show you now so you understand why I'm doing it. I'm just going to ${v("pull-up", "pull up")} someone else's notes quite quickly on GitHub—just so you understand, and then it will help you use the lesson better as well.`
+      },
+      {
+        id: "turn-12",
+        speaker: "Tikhonov",
+        time: "03:22",
+        html: `Yeah, that's true.`
+      },
+      {
+        id: "turn-13",
+        speaker: "Lewis",
+        time: "03:22",
+        html: `Okay, so this is another student's GitHub page. I'll share the screen. About one or two hours after the lesson, you'll get this from me. Preply already gives you a basic version of it, but let me show you: at the end of the lesson, you will now get a full transcript directly from me. I don't record your visuals or your audio—it's just the ${v("annotation", "annotation")} of the lesson.`
+      },
+      {
+        id: "turn-14",
+        speaker: "Tikhonov",
+        time: "03:59",
+        html: `Mm-hmm.`
+      },
+      {
+        id: "turn-15",
+        speaker: "Lewis",
+        time: "04:26",
+        html: `What happens is it will highlight words, and it's specifically trained for when I interrupt. So when I interrupt, it will note the word and describe it. That way, when you look back at the lesson notes, you can go, <em>"Ah, that's what Lewis said!"</em> And you can see how I tried to increase the level as well—so like, this is a <strong>C1 word</strong> ${fixBadge("C1 word", "video one word")}, or going back on <em>"${v("blew-my-mind", "blew my mind")}"</em> ${fixBadge("blew my mind", "blue my mind")} is a B2 idiom. So when you get the text two hours later and want to ${v("go-over", "go over")} it, you'll get much more information—and you don't have the stress of taking notes during class.`
+      },
+      {
+        id: "turn-16",
+        speaker: "Tikhonov",
+        time: "05:15",
+        html: `Nice, yeah! Okay, nice.`
+      },
+      {
+        id: "turn-17",
+        speaker: "Lewis",
+        time: "05:17",
+        html: `And any homework will be in this section here, and since it's a GitHub page, you get the one link—you don't have to worry about multiple files. Okay, let's ${v("get-rid-of", "get rid of")} this page! So, you saw lots of your friend's relatives?`
+      },
+      {
+        id: "turn-18",
+        speaker: "Tikhonov",
+        time: "05:52",
+        html: `Yes—they were relatives and friends of my Azerbaijani friend. He was born in Russia, in Moscow, but most of his family is in Azerbaijan. It is a very beautiful country, and I've noticed that not many Europeans know about this country. I met many European citizens who were travelling in Georgia and Armenia, and when I asked them about Azerbaijan, they hadn't heard much about it. But for me, Azerbaijan is much, much better than Georgia and Armenia. <strong>Baku</strong>, the capital, is much prettier, more developed, more interesting—and the nature is ${v("outstanding", "outstanding")}! So I really liked it.`
+      },
+      {
+        id: "turn-19",
+        speaker: "Lewis",
+        time: "07:06",
+        html: `How's the food?`
+      },
+      {
+        id: "turn-20",
+        speaker: "Tikhonov",
+        time: "07:10",
+        html: `I love Azerbaijani food because it's really similar to Turkish ${v("cuisine", "cuisine")}. I love Turkey and I love Turkish food, so it's really close to it. And I'm not sure—did you know that the Azerbaijani language and the Turkish language are very, very... how to say?`
+      },
+      {
+        id: "turn-21",
+        speaker: "Lewis",
+        time: "07:48",
+        html: `Similar?`
+      },
+      {
+        id: "turn-22",
+        speaker: "Tikhonov",
+        time: "07:49",
+        html: `Yeah, they're similar! They are basically like one language—like American English and British English, they are very, very close to each other.`
+      },
+      {
+        id: "turn-23",
+        speaker: "Lewis",
+        time: "08:03",
+        html: `Oh, wow! I didn't realize it was like that. Wow, that is fascinating.`
+      },
+      {
+        id: "turn-24",
+        speaker: "Tikhonov",
+        time: "08:07",
+        html: `Yeah, it was a shock because they are different countries and nobody talks about it, but it's true. Many Turkish people come to Azerbaijan, and many Azerbaijanis go to Turkey, and they can easily speak with locals.`
+      },
+
+      // CHAPTER II: 08:35 - 20:54
+      {
+        id: "turn-25",
+        chapterId: "chap-2",
+        chapterTitle: "Chapter II • Two Truths & One Lie: The 400-Guest Azerbaijani Village Wedding & Vietnamese Traditions (08:35 – 20:54)",
+        speaker: "Lewis",
+        time: "08:35",
+        html: `Okay, so can you tell me <strong>two truths and one lie</strong> about what happened on your trip, and I'm going to guess?`
+      },
+      {
+        id: "turn-26",
+        speaker: "Tikhonov",
+        time: "08:52",
+        html: `Okay! First, just for context—it's the truth—we went to a wedding in Azerbaijan. So here are my three statements (two truths and one lie):<br/>
+        <strong>1.</strong> There were more than <strong>300 guests</strong> at the wedding.<br/>
+        <strong>2.</strong> When we were driving to the restaurant where the celebration was held, there was a <strong>car accident</strong>.<br/>
+        <strong>3.</strong> Some lady burned something in her hands to... I'm not sure how to say it in English... she wanted to make demons go away from the wedding.`
+      },
+      {
+        id: "turn-27",
+        speaker: "Lewis",
+        time: "10:24",
+        html: `She wanted to ${v("ward-off", "ward off")} demons! I'll type it as well because of the 'd' at the end: <strong>to ward off demons</strong>. Just like in <em>The Witcher</em> video game—they ward off demons!`
+      },
+      {
+        id: "turn-28",
+        speaker: "Tikhonov",
+        time: "10:38",
+        html: `Ward off demons! Ah, yeah, yeah, yeah. Ward off.`
+      },
+      {
+        id: "turn-29",
+        speaker: "Lewis",
+        time: "10:54",
+        html: `Okay, so she was burning stuff to keep demons away at a wedding—which I completely believe because I've seen crazy stuff in Asia like that. And you said there were 300 people at a wedding, which I completely believe as well. And the middle one was the car accident. First question: were there 300 people at the wedding, or at the ${v("wedding-reception", "wedding reception")}?`
+      },
+      {
+        id: "turn-30",
+        speaker: "Tikhonov",
+        time: "11:39",
+        html: `What is a wedding reception? I don't understand.`
+      },
+      {
+        id: "turn-31",
+        speaker: "Lewis",
+        time: "11:42",
+        html: `So the <strong>wedding reception</strong> is anything except for the formal ${v("ceremony", "ceremony")}—for example, eating, drinking, the party. In England, you may be invited to the wedding reception, but not the ceremony, because churches are small.`
+      },
+      {
+        id: "turn-32",
+        speaker: "Tikhonov",
+        time: "12:05",
+        html: `Mm-hmm, okay—at the wedding reception!`
+      },
+      {
+        id: "turn-33",
+        speaker: "Lewis",
+        time: "12:11",
+        html: `And where was the wedding reception? Was it in a restaurant, ${v("i-take-it", "I take it")}?`
+      },
+      {
+        id: "turn-34",
+        speaker: "Tikhonov",
+        time: "12:15",
+        html: `Yeah, <strong>in a very big restaurant</strong> ${fixBadge("in a very big restaurant", "In Avera Beach Restaurant")}.`
+      },
+      {
+        id: "turn-35",
+        speaker: "Lewis",
+        time: "12:17",
+        html: `Okay, and was the restaurant inside or outside?`
+      },
+      {
+        id: "turn-36",
+        speaker: "Tikhonov",
+        time: "12:21",
+        html: `Inside! Yeah, very big.`
+      },
+      {
+        id: "turn-37",
+        speaker: "Lewis",
+        time: "12:25",
+        html: `Ooh, inside! Wow, that is a very big restaurant. Okay, and the car crash—how did it happen?`
+      },
+      {
+        id: "turn-38",
+        speaker: "Tikhonov",
+        time: "12:38",
+        html: `It actually didn't happen to the car that I was in. We were driving in a convoy line when all the cars were heading to the restaurant, and one of those cars couldn't properly turn onto another road—it was going very fast, and it just crashed into a wall.`
+      },
+      {
+        id: "turn-39",
+        speaker: "Lewis",
+        time: "13:19",
+        html: `We say: <strong>"It couldn't ${v("take-the-corner", "take the corner")}."</strong>`
+      },
+      {
+        id: "turn-40",
+        speaker: "Tikhonov",
+        time: "13:28",
+        html: `Yeah, yeah, it couldn't take the corner! And as for the lady burning things: we came to the house where the bride was, and after the speeches and taking photos with the ${v("bride-and-groom", "bride and groom")}, she came out to the house with a burning plate of herbs.`
+      },
+      {
+        id: "turn-41",
+        speaker: "Lewis",
+        time: "14:16",
+        html: `Okay... I think there was no car crash!`
+      },
+      {
+        id: "turn-42",
+        speaker: "Tikhonov",
+        time: "14:21",
+        html: `"There was no car crash"? There actually <em>was</em> a car crash! The lie was the first one—because there weren't 300 guests, there were <strong>more than 400 guests</strong>! It was actually even more. It was the biggest restaurant I have ever seen in all my life.`
+      },
+      {
+        id: "turn-43",
+        speaker: "Lewis",
+        time: "14:36",
+        html: `Oh! Wow!`
+      },
+      {
+        id: "turn-44",
+        speaker: "Tikhonov",
+        time: "14:52",
+        html: `And it wasn't even in a city—it was in a village in Azerbaijan! The funniest part about this fact is that when I asked my friend about the guests, he told me that he knew almost nobody there, because it's normal to invite random people to your wedding in Azerbaijan. It's considered more luxurious when you have many guests. I saw some people who were just sitting there smoking... how do I say it? <strong>${v("hookah", "Hookah")}!</strong> ${fixBadge("hookah", "ho-hook / hookie")}`
+      },
+      {
+        id: "turn-45",
+        speaker: "Lewis",
+        time: "16:03",
+        html: `Hookah! That's it! It sounds like you're describing Vietnam. So are you sitting at ${v("loads-of", "loads of")} round tables everywhere? And do you donate money in envelopes to the bride and groom as well?`
+      },
+      {
+        id: "turn-46",
+        speaker: "Tikhonov",
+        time: "16:20",
+        html: `Yeah, yeah!`
+      },
+      {
+        id: "turn-47",
+        speaker: "Lewis",
+        time: "16:25",
+        html: `It's the exact same in Vietnam! You donate money, and they invite 1,000 or 2,000 people. Like you said, the more people you invite, the more ${v("prestigious", "prestigious")} ${fixBadge("prestigious", "prestigio")} it looks: <em>"Look at us!"</em> The bride and groom pay ${v("in-advance", "in advance")}, and then all the guests help pay for the wedding, while the old guys sit around drinking and smoking hookah. So the lie was that there were even more people!`
+      },
+      {
+        id: "turn-48",
+        speaker: "Tikhonov",
+        time: "17:09",
+        html: `Yeah, it was a ${v("tricky", "tricky")} one!`
+      },
+      {
+        id: "turn-49",
+        speaker: "Lewis",
+        time: "17:10",
+        html: `It was a great one! I completely believed the lady burning something because in Vietnam they burn offerings too. Many years ago, my girlfriend and I were driving to <strong>Laos</strong> ${fixBadge("Laos", "Lao")}—a two-hour drive to get my visa stamp—and I'll never forget it: someone was burning a brand-new motorbike by the side of the road! I asked my girlfriend what they were doing, and she said, <em>"Someone must have died, and they loved motorbikes—so in Vietnamese culture, if you burn it, it gets sent to heaven so they can enjoy it."</em> It was brand new, just ${v("falling-apart", "falling apart")} in the flames! Anyway, so you had a great time at the wedding?`
+      },
+      {
+        id: "turn-50",
+        speaker: "Tikhonov",
+        time: "18:30",
+        html: `Yeah, it was actually a great time for me—though maybe not for the groom and bride! Because they were born in Moscow, a modern big city, and this whole traditional wedding in an Azerbaijani village was organized because their parents really wanted it. There was big family drama before and after the wedding! But for me, since I was just a guest, it was so much fun. I talked with Azerbaijani locals who couldn't speak Russian, and somehow we still discussed all kinds of topics using ${v("gestures", "gestures")} ${fixBadge("gestures", "jesters")} and ${v("mimics", "mimics")}. Nobody understood each other's words, and they were really drunk—I think that's the reason we could understand each other!`
+      },
+      {
+        id: "turn-51",
+        speaker: "Lewis",
+        time: "19:50",
+        html: `I completely understand! At a Vietnamese wedding, everyone comes over to toast: <em>"Drink together! Come on, drink!"</em> And then two hours later, they're drunk because many Vietnamese people cannot ${v("metabolize", "metabolize")} alcohol as fast, and they're confused why I'm not drunk yet because I'm English! They try to ${v("keep-up-with", "keep up with")} you. Weddings are the best, right?`
+      },
+      {
+        id: "turn-52",
+        speaker: "Tikhonov",
+        time: "20:53",
+        html: `Yes, yes, yes!`
+      },
+
+      // CHAPTER III: 20:54 - 25:55
+      {
+        id: "turn-53",
+        chapterId: "chap-3",
+        chapterTitle: "Chapter III • Rhythm & Cadence Practice: Dr. Seuss's Mr. Knox Tongue-Twister Poem (20:54 – 25:55)",
+        speaker: "Lewis",
+        time: "20:54",
+        html: `Okay, very good! Now we're going to do a quick bit of reading—nothing heavy, just for speech rhythm and cadence. Do you know <strong>Dr. Seuss</strong> ${fixBadge("Dr. Seuss", "Dr. Zeus")}? He's a famous American author who specializes in children's books with playful rhymes like <em>The Grinch</em> and <em>The Cat in the Hat</em>. I'll read it first, and then we'll do it stanza by stanza:<br/><br/>
+        <em>"Do you speak in a house? Do you speak to a mouse?<br/>
+        Do you ${v("mutter", "mutter")} in the morning with a ${v("stutter", "stutter")} and a yawning?<br/>
+        Oh, the words inside your head, some are blue, some are red.<br/>
+        Some are twisty, tangly tight; some won't come out right at night.<br/>
+        You might say 'Zizzer-Zazzer-Zuzz' ${fixBadge("Zizzer-Zazzer-Zuzz", "a zzz")} when you meant to say 'Who has?'<br/>
+        You might mix your past and present, which is bumpy and unpleasant.<br/>
+        Do not ${v("fret", "fret")} ${fixBadge("fret", "Fretch")}, says Mr. Knox, standing on his speaking box.<br/>
+        Every ${v("blunder", "blunder")}, slip, and trip, every ${v("tongue-tied", "tongue-tied")}, tangled lip<br/>
+        Is the way your brain grows wide when those silly sounds ${v("collide", "collide")}.<br/>
+        So speak it loud, speak it fast! Speak the future, speak the past!<br/>
+        For a word that's never spoken leaves the conversation broken.<br/>
+        Give your tongue a little spin—that is how the words begin!"</em>`
+      },
+      {
+        id: "turn-54",
+        speaker: "Lewis",
+        time: "22:41",
+        html: `It's supposed to twist your tongue, so don't worry! We'll do it ${v("stanza", "stanza")} by stanza. Can you read the first part for me?`
+      },
+      {
+        id: "turn-55",
+        speaker: "Tikhonov",
+        time: "23:04",
+        html: `<em>"Do you speak in a house? Do you speak to a mouse? Do you mutter in the morning with a stutter and a yawning?"</em>`
+      },
+      {
+        id: "turn-56",
+        speaker: "Lewis",
+        time: "23:12",
+        html: `Good, very nice! Next part.`
+      },
+      {
+        id: "turn-57",
+        speaker: "Tikhonov",
+        time: "23:16",
+        html: `<em>"Oh, the words inside your head, some are blue and some are red. Some are twisty, tangly tight; some won't come out right at night."</em>`
+      },
+      {
+        id: "turn-58",
+        speaker: "Lewis",
+        time: "23:39",
+        html: `Very good! Next: <em>"You might say 'Zzz' when you meant to say 'Who has?' You might mix your past and present, which is bumpy and unpleasant."</em>`
+      },
+      {
+        id: "turn-59",
+        speaker: "Tikhonov",
+        time: "23:58",
+        html: `<em>"You might say 'Zzz' when you meant to say 'Who has?' You might mix your past and present, which is bumpy and unpleasant."</em>`
+      },
+      {
+        id: "turn-60",
+        speaker: "Lewis",
+        time: "24:15",
+        html: `Very nice! Next stanza: <em>"Do not fret, says Mr. Knox, standing on his speaking box. Every ${v("blunder", "blunder")}, slip, and trip, every ${v("tongue-tied", "tongue-tied")}, tangled lip is the way your brain grows wide when those silly sounds ${v("collide", "collide")}."</em>`
+      },
+      {
+        id: "turn-61",
+        speaker: "Tikhonov",
+        time: "24:32",
+        html: `<em>"Do not fret, says Mr. Knox, standing on his speaking box. Every blunder, slip, and trip, every tongue-tied, tangled lip is the way your brain grows wide when those silly sounds collide."</em>`
+      },
+      {
+        id: "turn-62",
+        speaker: "Lewis",
+        time: "24:51",
+        html: `Good, very nice! And the final stanza: <em>"So speak it loud and speak it fast! Speak the future, speak the past! For a word that's never spoken leaves the conversation broken. Give your tongue a little spin—that's how the words begin."</em>`
+      },
+      {
+        id: "turn-63",
+        speaker: "Tikhonov",
+        time: "25:09",
+        html: `<em>"So speak it loud and speak it fast! Speak the future, speak the past! For a word that's never spoken leaves the conversation broken. Give your tongue a little spin—that is how the words begin."</em>`
+      },
+      {
+        id: "turn-64",
+        speaker: "Lewis",
+        time: "25:23",
+        html: `Very nice, very good! How did it feel saying that poem?`
+      },
+      {
+        id: "turn-65",
+        speaker: "Tikhonov",
+        time: "25:30",
+        html: `It was easier than I thought! And when you showed me how to say it with rhythm first, it was much easier to read it.`
+      },
+
+      // CHAPTER IV: 25:55 - 34:45
+      {
+        id: "turn-66",
+        chapterId: "chap-4",
+        chapterTitle: "Chapter IV • Heads-Up Speed-Thinking Game: Food (Poutine & Waffles) & Video Games (Half-Life, Stardew Valley, Valorant, Brawl Stars) (25:55 – 34:45)",
+        speaker: "Lewis",
+        time: "25:55",
+        html: `Fantastic! Now I'm going to send you a little URL in the chat for the next exercise. Are you viewing this on a laptop? Perfect. It's the <strong>Heads-Up</strong> game. What I suggest is we ${v("take-it-in-turns", "take it in turns")}, okay? You get a word on screen, and you have to describe the word to me without saying the word itself, and we try to get as many as possible.`
+      },
+      {
+        id: "turn-67",
+        speaker: "Tikhonov",
+        time: "26:53",
+        html: `Okay! Should I choose a category? Actually, I would prefer if it could be any category.`
+      },
+      {
+        id: "turn-68",
+        speaker: "Lewis",
+        time: "27:03",
+        html: `No problem at all! We both have the game on our own screens—so I can see mine, but I can't see yours, and ${v("vice-versa", "vice versa")}. Just to show you how it works first, I'll start on my screen with <strong>Food</strong>, and you guess!`
+      },
+      {
+        id: "turn-69",
+        speaker: "Tikhonov",
+        time: "27:47",
+        html: `Okay!`
+      },
+      {
+        id: "turn-70",
+        speaker: "Lewis",
+        time: "27:55",
+        html: `Here we go, first food item: Oof, it's a Canadian food! It's made with chips (French fries), <strong>cheese curds</strong> ${fixBadge("cheese curds", "cheese curdles")}, and ${v("gravy", "gravy")} on top. Canadians love it—in England we just call something similar cheesy chips. Have you ever had this Canadian dish before?`
+      },
+      {
+        id: "turn-71",
+        speaker: "Tikhonov",
+        time: "28:25",
+        html: `No.`
+      },
+      {
+        id: "turn-72",
+        speaker: "Lewis",
+        time: "28:26",
+        html: `It's called <strong>${v("poutine", "poutine")}</strong>!`
+      },
+      {
+        id: "turn-73",
+        speaker: "Tikhonov",
+        time: "28:32",
+        html: `Poutine?`
+      },
+      {
+        id: "turn-74",
+        speaker: "Lewis",
+        time: "28:33",
+        html: `Yes, poutine! Next food item: it's an American breakfast dessert. It's quite thick, it's a ${v("pastry", "pastry")} batter cooked in a grid pattern, and they put caramel sauce and ice cream on top. They even have a famous restaurant chain in America called "Something House".`
+      },
+      {
+        id: "turn-75",
+        speaker: "Tikhonov",
+        time: "28:59",
+        html: `Ah—cheesecake?`
+      },
+      {
+        id: "turn-76",
+        speaker: "Lewis",
+        time: "29:01",
+        html: `Haha, no, that's <em>The Cheesecake Factory</em>! Good guess though! This one looks a bit like thick pancakes with little squares—it was <strong>waffles</strong> (like <em>Waffle House</em>)!`
+      },
+      {
+        id: "turn-77",
+        speaker: "Tikhonov",
+        time: "29:20",
+        html: `Ah, waffles! Yeah, okay.`
+      },
+      {
+        id: "turn-78",
+        speaker: "Lewis",
+        time: "29:21",
+        html: `Next one—this one's really easy: it's sliced bread, and you put it in a machine, it heats up, and it pops out crispy.`
+      },
+      {
+        id: "turn-79",
+        speaker: "Tikhonov",
+        time: "29:30",
+        html: `Yeah—<strong>toast</strong>!`
+      },
+      {
+        id: "turn-80",
+        speaker: "Lewis",
+        time: "29:31",
+        html: `Very good! Let me quickly show you a picture of <strong>poutine</strong> on screen—my Canadian friends absolutely love it. It's just gravy, cheese curds, and fries.`
+      },
+      {
+        id: "turn-81",
+        speaker: "Tikhonov",
+        time: "29:58",
+        html: `Oh, it looks very tasty! For me, when you said <em>"poutine"</em>, it sounded like the <strong>Russian President (Putin)</strong>, you know? ${fixBadge("sounded like the Russian President (Putin)", "poutine it was like Russian. President")}`
+      },
+      {
+        id: "turn-82",
+        speaker: "Lewis",
+        time: "30:21",
+        html: `Hahaha, yeah! I didn't even ${v("join-the-dots", "join the dots")} when I said it! Because in French-Canadian, Putin and poutine are spelled and pronounced almost identically! Okay, now it's your turn to describe to me—let's choose <strong>Video Games</strong>. Select 90 seconds!`
+      },
+      {
+        id: "turn-83",
+        speaker: "Tikhonov",
+        time: "31:21",
+        html: `Okay, first game: it's an old classic game, and everyone has been waiting for a third part of this game, but it never comes out—it never happens! Wait, let me look at a picture of the logo... Ah, yeah! It has a Greek letter (lambda <strong>λ</strong>) in the logo of this game.`
+      },
+      {
+        id: "turn-84",
+        speaker: "Lewis",
+        time: "32:03",
+        html: `Okay—is it <em>God of War</em>?`
+      },
+      {
+        id: "turn-85",
+        speaker: "Tikhonov",
+        time: "32:06",
+        html: `No! And the main character in this game is a guy with glasses [Gordon Freeman], and he's like a scientist or technician, and this game is ${v("sci-fi", "sci-fi")} ${fixBadge("sci-fi", "Skyfi")}.`
+      },
+      {
+        id: "turn-86",
+        speaker: "Lewis",
+        time: "32:28",
+        html: `Oh! <em>Deus Ex Machina</em> ${fixBadge("Deus Ex Machina", "Days X Machina")}? <em>Cyberpunk</em>? <em>Watch Dogs</em>?`
+      },
+      {
+        id: "turn-87",
+        speaker: "Tikhonov",
+        time: "32:38",
+        html: `No—it's <strong>Half-Life</strong>!`
+      },
+      {
+        id: "turn-88",
+        speaker: "Lewis",
+        time: "32:47",
+        html: `Oh, <em>Half-Life</em>! Of course, Half-Life 3 never comes out! Great description. Let's do another round!`
+      },
+      {
+        id: "turn-89",
+        speaker: "Tikhonov",
+        time: "33:05",
+        html: `Okay, next one: I didn't play it myself, but I know something about it. It's a pixel-art game about having your own farm...`
+      },
+      {
+        id: "turn-90",
+        speaker: "Lewis",
+        time: "33:21",
+        html: `<strong>Stardew Valley</strong>! ${fixBadge("Stardew Valley", "Starting value")}`
+      },
+      {
+        id: "turn-91",
+        speaker: "Tikhonov",
+        time: "33:22",
+        html: `Yes! Next one: in the name of this game, it's something really sweet, you know?`
+      },
+      {
+        id: "turn-92",
+        speaker: "Lewis",
+        time: "33:38",
+        html: `<em>Candy Crush</em>! ${fixBadge("Candy Crush", "Pandemon")}`
+      },
+      {
+        id: "turn-93",
+        speaker: "Tikhonov",
+        time: "33:39",
+        html: `Yes! Next: it's a popular online game where there are two teams, and it's something similar to <em>Counter-Strike</em>, but more modern and ${v("sci-fi", "sci-fi")} ${fixBadge("sci-fi", "Skyfight")}.`
+      },
+      {
+        id: "turn-94",
+        speaker: "Lewis",
+        time: "34:02",
+        html: `Oh—<strong>Valorant</strong>!`
+      },
+      {
+        id: "turn-95",
+        speaker: "Tikhonov",
+        time: "34:04",
+        html: `Yes! And the last one: it's a mobile game, very popular for kids, and it's made by the <em>Clash Royale</em> and <em>Clash of Clans</em> developers [Supercell].`
+      },
+      {
+        id: "turn-96",
+        speaker: "Lewis",
+        time: "34:22",
+        html: `Oh, I had no idea the <em>Clash of Clans</em> developers made another big one—what was it?`
+      },
+      {
+        id: "turn-97",
+        speaker: "Tikhonov",
+        time: "34:31",
+        html: `It was <strong>Brawl Stars</strong> ${fixBadge("Brawl Stars", "Bra-Bravo Stars")}! Yeah, it's very popular now.`
+      },
+
+      // CHAPTER V: 34:45 - 48:40
+      {
+        id: "turn-98",
+        chapterId: "chap-5",
+        chapterTitle: "Chapter V • Emotions & Abstract Concepts: Active vs. Passive Vernacular, Wisdom, Smugness & Patience (34:45 – 48:40)",
+        speaker: "Lewis",
+        time: "34:45",
+        html: `Very good! Now I'm going to describe <strong>Emotions</strong> to you. Three, two, one: when you can't wait—when you want something right now, like a child wanting ice cream—they are this.`
+      },
+      {
+        id: "turn-99",
+        speaker: "Tikhonov",
+        time: "35:15",
+        html: `Oh, I'm not even sure how to say it in English right now, to be honest...`
+      },
+      {
+        id: "turn-100",
+        speaker: "Lewis",
+        time: "35:24",
+        html: `${v("impatient", "Impatient")}! "I'm impatient"—meaning I can't wait for something.`
+      },
+      {
+        id: "turn-101",
+        speaker: "Tikhonov",
+        time: "35:27",
+        html: `Impatient! Okay.`
+      },
+      {
+        id: "turn-102",
+        speaker: "Lewis",
+        time: "35:32",
+        html: `Next one: when you go somewhere like a new village, and you're a stranger, and people look at you and they're ${v("wary", "wary")}—they think, <em>"Hmm, why is this person here?"</em>`
+      },
+      {
+        id: "turn-103",
+        speaker: "Tikhonov",
+        time: "35:50",
+        html: `They don't trust you, right? They are...`
+      },
+      {
+        id: "turn-104",
+        speaker: "Lewis",
+        time: "36:02",
+        html: `It's okay—${v("suspicious", "suspicious")}!`
+      },
+      {
+        id: "turn-105",
+        speaker: "Tikhonov",
+        time: "36:05",
+        html: `Ah, suspicious! Okay.`
+      },
+      {
+        id: "turn-106",
+        speaker: "Lewis",
+        time: "36:07",
+        html: `Next word: it's a feeling you have when you have no one around—no friends, no family nearby. You feel...`
+      },
+      {
+        id: "turn-107",
+        speaker: "Tikhonov",
+        time: "36:24",
+        html: `At first I thought "concentrated"—oh, no friends, no family: <strong>lonely</strong>!`
+      },
+      {
+        id: "turn-108",
+        speaker: "Lewis",
+        time: "36:32",
+        html: `Yes, lonely! Very good. By the way, have you been to Vietnam? Have you ever had people be suspicious of you there? Because sometimes I go somewhere in Asia ${v("in-the-middle-of-nowhere", "in the middle of nowhere")}, and they stare at me suspiciously—until I speak to them in Vietnamese!`
+      },
+      {
+        id: "turn-109",
+        speaker: "Tikhonov",
+        time: "36:48",
+        html: `Yes, I've been to Vietnam, though I didn't feel that way. I would say they're more interested in you than suspicious—but every person feels it in their own way!`
+      },
+      {
+        id: "turn-110",
+        speaker: "Lewis",
+        time: "37:13",
+        html: `That's very true! Now it's the other way around—can you describe <strong>Emotions</strong> to me?`
+      },
+      {
+        id: "turn-111",
+        speaker: "Tikhonov",
+        time: "37:46",
+        html: `Okay, first emotion: it's when you remember old times and you feel something warm in your soul.`
+      },
+      {
+        id: "turn-112",
+        speaker: "Lewis",
+        time: "38:05",
+        html: `<strong>${v("nostalgia", "Nostalgia")}</strong>!`
+      },
+      {
+        id: "turn-113",
+        speaker: "Tikhonov",
+        time: "38:07",
+        html: `Yeah! Next one: you are very relaxed—it's pretty similar to relaxed, you don't worry...`
+      },
+      {
+        id: "turn-114",
+        speaker: "Lewis",
+        time: "38:21",
+        html: `Peaceful? ${v("tranquil", "Tranquil")}?`
+      },
+      {
+        id: "turn-115",
+        speaker: "Tikhonov",
+        time: "38:29",
+        html: `Tranquil—oh, I didn't know that word! The card was <strong>calm</strong>. Next emotion—sorry, I don't know this word: how do you pronounce it, <strong>${v("content", "content")}</strong>? What is <em>content</em>?`
+      },
+      {
+        id: "turn-116",
+        speaker: "Lewis",
+        time: "38:48",
+        html: `<strong>Content</strong> (/kənˈtent/)! It's when you're peacefully happy and okay with how things are: <em>"I'm content."</em>`
+      },
+      {
+        id: "turn-117",
+        speaker: "Tikhonov",
+        time: "38:59",
+        html: `Oh, okay! And here is another new word for me—the hint says it <em>"combines self-satisfaction, pride, and a sense of superiority."</em>`
+      },
+      {
+        id: "turn-118",
+        speaker: "Lewis",
+        time: "39:23",
+        html: `Hmm... ${v("triumph", "triumph")}?`
+      },
+      {
+        id: "turn-119",
+        speaker: "Tikhonov",
+        time: "39:27",
+        html: `It says <strong>${v("smug", "smug")}</strong> ${fixBadge("smug", "smock")}! So it means you're proud of yourself?`
+      },
+      {
+        id: "turn-120",
+        speaker: "Lewis",
+        time: "39:29",
+        html: `Oh, <strong>smug</strong>! Yes! "He's smug"—it's when you're overly proud of yourself and you let others see it on your face, like: <em>"Hmph, I did that! It was because of me and my skills that the project got done!"</em>`
+      },
+      {
+        id: "turn-121",
+        speaker: "Tikhonov",
+        time: "39:47",
+        html: `"Me and my skills!" Yeah, yeah, interesting!`
+      },
+      {
+        id: "turn-122",
+        speaker: "Lewis",
+        time: "39:50",
+        html: `Okay, now it's going to get a bit more difficult—we're going to do <strong>Abstract Concepts</strong>. I'll start! First one: it's like knowledge, but it comes with age and life experience. Thai monks in the temple have it when you ask them for advice—they give you some...`
+      },
+      {
+        id: "turn-123",
+        speaker: "Tikhonov",
+        time: "40:33",
+        html: `Monks...`
+      },
+      {
+        id: "turn-124",
+        speaker: "Lewis",
+        time: "40:34",
+        html: `<strong>${v("wisdom", "Wisdom")}</strong>! Next word: when you're brave, you have this.`
+      },
+      {
+        id: "turn-125",
+        speaker: "Tikhonov",
+        time: "40:59",
+        html: `Heroism? It's like a personal quality, right?`
+      },
+      {
+        id: "turn-126",
+        speaker: "Lewis",
+        time: "41:01",
+        html: `It's ${v("in-that-vein", "in that vein")}, yes—an ${v("attribute", "attribute")} you can have. People who are scared do not have this: <strong>courage</strong>! Next one: a <em>Star Wars</em> movie (Episode IV) has this in the title—it's when you wish something good will happen in the future: <strong>hope</strong> (<em>A New Hope</em>)!`
+      },
+      {
+        id: "turn-127",
+        speaker: "Tikhonov",
+        time: "42:12",
+        html: `Hope! Ah, mm-hmm. In Russian, <em>wisdom</em> (мудрость) is a quality in an older person—because he knows many things and has lived for a long time, so it's like deep knowledge about life.`
+      },
+      {
+        id: "turn-128",
+        speaker: "Lewis",
+        time: "43:47",
+        html: `Exactly—we say poetically, <em>"They've seen many winters."</em> And when you have <strong>courage</strong>, the adjective is ${v("courageous", "courageous")}. And people who do not have courage are ${v("cowardly", "cowardly")}.`
+      },
+      {
+        id: "turn-129",
+        speaker: "Tikhonov",
+        time: "44:08",
+        html: `Yeah. You know, when I see, read, or listen to these words, I know them and I understand them. But my <strong>active language</strong> is not as good as my <strong>passive</strong> language, so it's very difficult to recall these words quickly.`
+      },
+      {
+        id: "turn-130",
+        speaker: "Lewis",
+        time: "44:31",
+        html: `We call that your <strong>${v("vernacular", "vernacular")}</strong> ${fixBadge("your vernacular", "you're vernacular")}—the active words you naturally use. So today's main goal is to get you speaking and thinking quicker, and pushing those brain pathways to navigate English fast. Now it's your turn to describe <strong>Abstract Concepts</strong> to me!`
+      },
+      {
+        id: "turn-131",
+        speaker: "Tikhonov",
+        time: "45:34",
+        html: `Okay, let's go! First one: when you want to know something about someone—for example, someone has information or did something, and you really want to know about it.`
+      },
+      {
+        id: "turn-132",
+        speaker: "Lewis",
+        time: "46:10",
+        html: `<strong>${v("curiosity", "Curiosity")}</strong>!`
+      },
+      {
+        id: "turn-133",
+        speaker: "Tikhonov",
+        time: "46:13",
+        html: `Yes, curiosity! Next: when you can do whatever you want, whenever you want.`
+      },
+      {
+        id: "turn-134",
+        speaker: "Lewis",
+        time: "46:23",
+        html: `<strong>Freedom</strong>!`
+      },
+      {
+        id: "turn-135",
+        speaker: "Tikhonov",
+        time: "46:26",
+        html: `Yeah! Next: did you watch <em>Avengers: Endgame</em>? Remember when <strong>Thanos</strong> had a double-edged knife balanced on his finger?`
+      },
+      {
+        id: "turn-136",
+        speaker: "Lewis",
+        time: "46:47",
+        html: `Oh—<strong>balance</strong>! Brilliant clue!`
+      },
+      {
+        id: "turn-137",
+        speaker: "Tikhonov",
+        time: "46:53",
+        html: `Yeah! Next: the opposite of a lie.`
+      },
+      {
+        id: "turn-138",
+        speaker: "Lewis",
+        time: "46:55",
+        html: `<strong>Truth</strong>!`
+      },
+      {
+        id: "turn-139",
+        speaker: "Tikhonov",
+        time: "46:58",
+        html: `And the last one: when you can do something for a long time, and you are not raging, and you're not trying to rush it fast—you should do something for a long time with this quality to get results.`
+      },
+      {
+        id: "turn-140",
+        speaker: "Lewis",
+        time: "47:13",
+        html: `Discipline? ${v("consistency", "Consistency")}? Determination? Oh, I pass, sorry—I'm ${v("draw-a-blank", "drawing a blank")} ${fixBadge("drawing a blank", "throwing a blank")}!`
+      },
+      {
+        id: "turn-141",
+        speaker: "Tikhonov",
+        time: "47:58",
+        html: `It's <strong>${v("patience", "patience")}</strong>! I meant patience.`
+      },
+      {
+        id: "turn-142",
+        speaker: "Lewis",
+        time: "48:00",
+        html: `Ah, <strong>patience</strong>! You can also describe it simply as: <em>"You're okay with waiting."</em> Do you have good patience?`
+      },
+      {
+        id: "turn-143",
+        speaker: "Tikhonov",
+        time: "48:33",
+        html: `No! Haha.`
+      },
+
+      // CHAPTER VI: 48:40 - 52:20
+      {
+        id: "turn-144",
+        chapterId: "chap-6",
+        chapterTitle: "Chapter VI • Upcoming Plans, Hanoi Film Festival & Cadence Homework (48:40 – 52:20)",
+        speaker: "Lewis",
+        time: "48:40",
+        html: `Haha, I don't think I do either! So, what do you have planned for the rest of the week?`
+      },
+      {
+        id: "turn-145",
+        speaker: "Tikhonov",
+        time: "48:45",
+        html: `I'm going to work, I'm going to have some gym workouts, I'm going to have another class with you on Thursday, and then do something fun on the weekend—though I'm not sure what exactly it will be yet.`
+      },
+      {
+        id: "turn-146",
+        speaker: "Lewis",
+        time: "49:12",
+        html: `Very good! My next few days are quite busy teaching and studying, and I'm getting ready for the <strong>Hanoi Film Festival</strong>—and the university here is also holding a film festival. I emailed them and I'm going next week to speak with the students and build new connections. I love film festivals in Vietnam because first of all they're free, which is a big bonus, and you sit right next to the film crew and they do a live Q&A afterwards! It's a great way to test how much my Vietnamese has improved each year.`
+      },
+      {
+        id: "turn-147",
+        speaker: "Tikhonov",
+        time: "50:56",
+        html: `Yeah, for sure—it's a great place to practice your language!`
+      },
+      {
+        id: "turn-148",
+        speaker: "Lewis",
+        time: "51:00",
+        html: `So for your ${v("cadence", "cadence")}, in your spare time—maybe when you're waiting for something or having a coffee—I'd like you to read that Dr. Seuss poem aloud a few times and just ${v("have-a-go", "have a go")} at saying it. The rhyming structure will pull you through and help your rhythm. In about two hours you'll have your interactive notes from today, and on Thursday we'll push on and go even faster! Take care and see you Thursday!`
+      },
+      {
+        id: "turn-149",
+        speaker: "Tikhonov",
+        time: "52:07",
+        html: `Thank you so much! Enjoy the rest of your week—bye-bye!`
+      }
+    ];
+
+    // -------------------------------------------------------------------------
+    // 3. SIX GENTLE PHRASING POLISHES & 15 NOTE-TAKER FIX LOGS
+    // -------------------------------------------------------------------------
+    const GENTLE_POLISHES = [
+      {
+        time: "01:55",
+        topic: "Nationality Adjective vs. Noun",
+        said: "He's originally Azerbaijanian... and I love Azerbaijanian food.",
+        natural: "He's originally Azerbaijani (or Azeri)... and I love Azerbaijani food.",
+        why: "In natural English, the adjective and person noun for Azerbaijan is 'Azerbaijani' (or 'Azeri'), rather than adding '-ian' at the end."
+      },
+      {
+        time: "06:45",
+        topic: "Double Comparative Upgrade",
+        said: "Baku, the capital, is much more prettier and more developed.",
+        natural: "Baku, the capital, is much prettier and more developed.",
+        why: "Because 'prettier' already has the comparative ending '-er', we simply say 'much prettier' (without 'more')."
+      },
+      {
+        time: "09:40",
+        topic: "Collocation for Road Accidents",
+        said: "When we were coming to the restaurant, we've got a car accident.",
+        natural: "On our way to the restaurant, there was a car accident (or: a car had an accident).",
+        why: "In English we say 'have a car accident' or 'get into a car accident' for a specific past event (using Past Simple rather than 'have got')."
+      },
+      {
+        time: "15:10",
+        topic: "Superlative Adjective Form",
+        said: "The most funniest part in this fact is that he knew nobody.",
+        natural: "The funniest part about this is that he knew nobody there.",
+        why: "Just like 'prettier', 'funniest' already has '-est', so we say 'the funniest part' (without 'most')."
+      },
+      {
+        time: "39:37",
+        topic: "Adjective vs. Noun ('Proud' vs. 'Pride')",
+        said: "So 'smug' means you're pride of yourself.",
+        natural: "So 'smug' means you're overly proud of yourself.",
+        why: "'Pride' is the noun ('take pride in'), while 'proud' is the adjective used after 'to be' ('be proud of yourself')."
+      },
+      {
+        time: "43:40",
+        topic: "Uncountable Nouns ('Knowledge' & 'Information')",
+        said: "It's like deep knowledges... or someone has an information.",
+        natural: "It's like deep knowledge... or someone has some information.",
+        why: "Both 'knowledge' and 'information' are uncountable in English, so they never take 'a/an' or a plural '-s'."
+      }
+    ];
+
+    const ASR_FIXES = [
+      {
+        time: "04:35",
+        speaker: "Lewis",
+        wrong: "video one word ... blue my mind",
+        right: "C1 word ... blew my mind",
+        note: "Explaining CEFR vocabulary levels (C1 / B2) and the past tense of 'blow my mind'."
+      },
+      {
+        time: "12:15",
+        speaker: "Tikhonov",
+        wrong: "In Avera Beach Restaurant",
+        right: "In a very big restaurant",
+        note: "The note-taker hallucinated a beach resort name when you said 'In a very big restaurant'!"
+      },
+      {
+        time: "15:54",
+        speaker: "Tikhonov & Lewis",
+        wrong: "ho-hook / hookie",
+        right: "hookah",
+        note: "Searching for the English word for кальян (hookah / shisha pipe) at the wedding tables."
+      },
+      {
+        time: "16:34",
+        speaker: "Lewis",
+        wrong: "the more prestigio",
+        right: "the more prestigious",
+        note: "Describing how inviting 400–1,000+ wedding guests signals social prestige."
+      },
+      {
+        time: "17:40",
+        speaker: "Lewis",
+        wrong: "driving to Lao",
+        right: "driving to Laos",
+        note: "Southeast Asian country bordering Thailand and Vietnam."
+      },
+      {
+        time: "19:30",
+        speaker: "Tikhonov",
+        wrong: "we talk like with jesters and mimics",
+        right: "we talked with gestures and mimics",
+        note: "Communicating through hand gestures (жесты) rather than medieval court jesters!"
+      },
+      {
+        time: "21:15",
+        speaker: "Lewis",
+        wrong: "Dr. Zeus",
+        right: "Dr. Seuss",
+        note: "Famous American children's book author of The Cat in the Hat, The Grinch, and Fox in Socks."
+      },
+      {
+        time: "21:55",
+        speaker: "Lewis",
+        wrong: "Do not. Fretch.",
+        right: "Do not fret",
+        note: "Line from the Mr. Knox poem meaning 'Do not worry'."
+      },
+      {
+        time: "28:15",
+        speaker: "Lewis",
+        wrong: "cheese curdles",
+        right: "cheese curds",
+        note: "Fresh bits of curdled milk cheese used on Canadian poutine."
+      },
+      {
+        time: "32:24",
+        speaker: "Tikhonov",
+        wrong: "Skyfi / Skyfight",
+        right: "Sci-Fi (Science Fiction)",
+        note: "Describing the futuristic genre of Half-Life and Valorant (/ˈsaɪ.faɪ/)."
+      },
+      {
+        time: "32:40",
+        speaker: "Lewis",
+        wrong: "Days X Machina",
+        right: "Deus Ex Machina",
+        note: "Famous cyberpunk/sci-fi video game series guessed during Heads-Up."
+      },
+      {
+        time: "33:21",
+        speaker: "Lewis",
+        wrong: "Starting value",
+        right: "Stardew Valley",
+        note: "Popular pixel-art farming RPG that Lewis guessed from your description."
+      },
+      {
+        time: "34:31",
+        speaker: "Tikhonov",
+        wrong: "Bra-Bravo Stars",
+        right: "Brawl Stars",
+        note: "Hit mobile game developed by Supercell (makers of Clash of Clans and Clash Royale)."
+      },
+      {
+        time: "39:27",
+        speaker: "Tikhonov & Lewis",
+        wrong: "smock",
+        right: "smug",
+        note: "Adjective combining self-satisfaction, pride, and a sense of superiority (/smʌɡ/)."
+      },
+      {
+        time: "47:50",
+        speaker: "Lewis",
+        wrong: "I'm throwing a blank",
+        right: "I'm drawing a blank",
+        note: "Idiom meaning 'I can't think of the word right now' while guessing 'patience'."
+      }
+    ];
+
+    // -------------------------------------------------------------------------
+    // 4. FLASHCARDS (12 KEY ITEMS) & 6-QUESTION CONTEXT QUIZ
+    // -------------------------------------------------------------------------
+    const FLASHCARD_KEYS = [
+      "outstanding",
+      "cadence",
+      "ward-off",
+      "wedding-reception",
+      "take-the-corner",
+      "prestigious",
+      "fret",
+      "tongue-tied",
+      "join-the-dots",
+      "tranquil",
+      "smug",
+      "vernacular"
+    ];
+    let currentCardIndex = 0;
+    let isCardFlipped = false;
+
+    const QUIZ_QUESTIONS = [
+      {
+        q: "1. At the Azerbaijani village wedding, a woman burned sacred herbs on a plate to ________ evil spirits and demons.",
+        options: ["ward off", "pull up", "fall apart"],
+        correct: 0,
+        explain: "'To ward off' (10:24) means to repel or keep away something dangerous or evil (отгонять злых духов)."
+      },
+      {
+        q: "2. One of the speeding cars in the wedding convoy was going too fast and couldn't ________, crashing into a wall.",
+        options: ["join the dots", "take the corner", "draw a blank"],
+        correct: 1,
+        explain: "'Take the corner' (13:22) is the natural English collocation for steering around a bend or turn in the road."
+      },
+      {
+        q: "3. In England, you might be invited to the evening party and meal—called the ________—even if the church is too small for everyone at the ceremony.",
+        options: ["wedding reception", "stanza", "annotation"],
+        correct: 0,
+        explain: "The 'wedding reception' (11:30) is the celebratory banquet and party held after the formal marriage ceremony."
+      },
+      {
+        q: "4. When someone shows excessive self-satisfaction and superiority—thinking 'The project only succeeded because of me and my skills!'—they are being ________.",
+        options: ["tranquil", "wary", "smug"],
+        correct: 2,
+        explain: "'Smug' (39:27, which the note-taker heard as 'smock') means overly self-satisfied and proud (самодовольный)."
+      },
+      {
+        q: "5. You noticed that you understand many English words when reading, even if you don't use them yet when speaking. The words you actively use in everyday speech make up your ________.",
+        options: ["vernacular", "cuisine", "curiosity"],
+        correct: 0,
+        explain: "Your 'vernacular' (44:31) refers to the everyday active language and vocabulary you naturally use when speaking."
+      },
+      {
+        q: "6. When Lewis couldn't think of the word 'patience' during the Heads-Up game, he said: 'I pass, sorry—I'm ________!'",
+        options: ["keeping up with you", "drawing a blank", "taking it in turns"],
+        correct: 1,
+        explain: "'To draw a blank' (47:50) means to be unable to remember or think of an answer in the moment."
+      }
+    ];
+
+    let activeVocabCategory = 'all';
+    let quizAnswered = new Set();
+
+    // -------------------------------------------------------------------------
+    // 5. RENDER TRANSCRIPT & TIPPY TOOLTIPS
+    // -------------------------------------------------------------------------
+    function renderTranscript() {
+      const container = document.getElementById('transcript-stream-container');
+      if (!container) return;
+      const searchVal = (document.getElementById('transcript-search')?.value || '').toLowerCase().trim();
+      const speakerFilter = document.getElementById('speaker-filter')?.value || 'all';
+
+      let html = '';
+      TRANSCRIPT_TURNS.forEach(turn => {
+        if (turn.chapterTitle && speakerFilter === 'all' && !searchVal) {
+          html += `
+            <div id="${turn.chapterId}" class="pt-3 pb-1">
+              <div class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-sage-100/90 via-parchment-100 to-autumn-50 border border-sage-200 flex items-center gap-2 text-xs sm:text-sm font-serif font-bold text-sage-800 shadow-sm">
+                <i data-lucide="bookmark" class="w-4 h-4 text-autumn-600 shrink-0"></i>
+                <span>${turn.chapterTitle}</span>
+              </div>
+            </div>
+          `;
+        }
+
+        if (speakerFilter !== 'all' && turn.speaker !== speakerFilter) return;
+
+        const plainText = turn.html.replace(/<[^>]+>/g, '').toLowerCase();
+        if (searchVal && !plainText.includes(searchVal) && !turn.time.includes(searchVal)) return;
+
+        const isStudent = turn.speaker === 'Tikhonov';
+        const cardStyle = isStudent
+          ? 'bg-[#fffdf9] border-l-4 border-l-autumn-500 border border-[#e6decb]'
+          : 'bg-[#f8faf8] border-l-4 border-l-sage-600 border border-[#d8e4dc]';
+
+        const badgeStyle = isStudent
+          ? 'bg-autumn-100 text-autumn-800 border-autumn-200'
+          : 'bg-sage-100 text-sage-800 border-sage-200';
+
+        html += `
+          <article id="${turn.id}" class="rounded-2xl p-4 sm:p-5 ${cardStyle} shadow-sm transition-all duration-300 space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold border ${badgeStyle}">
+                  ${isStudent ? '🏔️ Tikhonov' : '🍂 Lewis (Tutor)'}
+                </span>
+                <span class="font-mono text-xs text-stone-500 flex items-center gap-1">
+                  <i data-lucide="clock" class="w-3 h-3"></i>
+                  ${turn.time}
+                </span>
+              </div>
+              <button onclick="speakPlainTurn('${turn.id}')" class="text-stone-400 hover:text-sage-700 transition p-1 rounded-lg" title="Listen to this turn in British English">
+                <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+            <div class="text-sm sm:text-[15px] text-slatewarm-800 leading-relaxed font-sans">
+              ${turn.html}
+            </div>
+          </article>
+        `;
+      });
+
+      if (!html) {
+        html = `<div class="sanctuary-card rounded-2xl p-8 text-center text-stone-500 text-sm">No matching turns found for your search filter.</div>`;
+      }
+
+      container.innerHTML = html;
+      if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+      if (typeof tippy === 'function') initVocabTooltips();
+    }
+
+    function initVocabTooltips() {
+      document.querySelectorAll('.vocab-mark').forEach(el => {
+        const key = el.getAttribute('data-vkey');
+        const item = VOCAB_DB[key];
+        if (!item) return;
+
+        if (el._tippy) el._tippy.destroy();
+
+        tippy(el, {
+          theme: 'autumn-sanctuary',
+          allowHTML: true,
+          interactive: true,
+          animation: 'shift-away',
+          maxWidth: 320,
+          content: `
+            <div class="p-2.5 space-y-2 text-left">
+              <div class="flex items-center justify-between gap-2 border-b border-parchment-200 pb-1.5">
+                <div>
+                  <span class="font-serif font-bold text-base text-slatewarm-900">${item.word}</span>
+                  <span class="block font-mono text-[10px] text-stone-500">${item.ipa} • ${item.pos}</span>
+                </div>
+                <div class="flex items-center gap-1">
+                  <span class="px-1.5 py-0.5 rounded bg-autumn-100 text-autumn-800 font-mono text-[10px] font-bold">${item.level}</span>
+                  <span class="px-1.5 py-0.5 rounded bg-sage-100 text-sage-800 font-mono text-[10px]">🕒 ${item.time}</span>
+                </div>
+              </div>
+              <p class="text-xs text-stone-700 leading-snug">${item.def}</p>
+              <div class="flex items-center justify-between pt-1 text-[11px] border-t border-parchment-200">
+                <span class="text-sage-800 font-semibold">🇷🇺 ${item.es}</span>
+                <button onclick="speakWord('${item.word.replace(/\s*\(.*?\)/g, '').replace(/'/g, "\\'")}')" class="px-2 py-0.5 rounded bg-sage-700 text-white text-[10px] font-semibold hover:bg-sage-800">🔊 Listen</button>
+              </div>
+            </div>
+          `
+        });
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 6. VOCABULARY SPOTLIGHT INSPECTOR & DICTIONARY TAB
+    // -------------------------------------------------------------------------
+    function inspectVocab(key) {
+      const item = VOCAB_DB[key];
+      if (!item) return;
+
+      document.querySelectorAll('.vocab-mark').forEach(el => {
+        if (el.getAttribute('data-vkey') === key) {
+          el.classList.add('active-vocab');
+        } else {
+          el.classList.remove('active-vocab');
+        }
+      });
+
+      document.getElementById('insp-time').textContent = `🕒 ${item.time}`;
+      document.getElementById('insp-word').textContent = item.word;
+      document.getElementById('insp-ipa').textContent = item.ipa;
+      document.getElementById('insp-pos').textContent = item.pos;
+      document.getElementById('insp-level').textContent = item.level;
+      document.getElementById('insp-def').textContent = item.def;
+      document.getElementById('insp-quote').textContent = item.quote;
+      document.getElementById('insp-es').textContent = `🇷🇺 ${item.es}`;
+
+      const cleanSpeak = item.word.replace(/\s*\(.*?\)/g, '').replace(/'/g, "\\'");
+      document.getElementById('insp-audio-btn').setAttribute('onclick', `speakWord('${cleanSpeak}')`);
+
+      const card = document.getElementById('vocab-inspector-card');
+      if (card && typeof gsap !== 'undefined') {
+        gsap.fromTo(card, { scale: 0.985 }, { scale: 1, duration: 0.25, ease: 'power2.out' });
+      }
+    }
+
+    function setVocabCategory(cat) {
+      activeVocabCategory = cat;
+      document.querySelectorAll('.vcat-btn').forEach(btn => {
+        btn.className = 'vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-medium bg-parchment-100 text-stone-700 hover:bg-autumn-100 transition';
+      });
+      const activeBtn = document.getElementById('vcat-' + cat);
+      if (activeBtn) {
+        activeBtn.className = 'vcat-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-sage-700 text-white transition';
+      }
+      renderVocabGrid();
+    }
+
+    function renderVocabGrid() {
+      const grid = document.getElementById('vocab-cards-grid');
+      if (!grid) return;
+      const search = (document.getElementById('vocab-search')?.value || '').toLowerCase().trim();
+      const levelFilter = document.getElementById('vocab-level-filter')?.value || 'all';
+
+      const entries = Object.entries(VOCAB_DB).filter(([key, item]) => {
+        if (activeVocabCategory !== 'all' && item.cat !== activeVocabCategory) return false;
+        if (levelFilter !== 'all' && !item.level.includes(levelFilter)) return false;
+        if (search) {
+          const hay = `${item.word} ${item.def} ${item.es} ${item.time} ${item.quote}`.toLowerCase();
+          if (!hay.includes(search)) return false;
+        }
+        return true;
+      });
+
+      grid.innerHTML = entries.map(([key, item]) => `
+        <div class="sanctuary-subcard rounded-2xl p-5 flex flex-col justify-between space-y-3 hover:border-autumn-400">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-1.5">
+                <span class="px-2 py-0.5 rounded-md bg-autumn-100 text-autumn-800 font-mono text-[11px] font-bold">${item.level}</span>
+                <span class="px-2 py-0.5 rounded-md bg-parchment-100 text-stone-600 text-[11px]">${item.pos}</span>
+              </div>
+              <button onclick="jumpToTranscriptTurn('${item.turnId}', '${key}')" class="px-2.5 py-0.5 rounded-full bg-sage-100 hover:bg-sage-200 text-sage-800 font-mono text-[11px] font-semibold flex items-center gap-1 transition" title="Jump to this moment in the transcript">
+                <i data-lucide="clock" class="w-3 h-3"></i>
+                ${item.time} ↗
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 pt-1">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-slatewarm-900">${item.word}</h3>
+                <span class="text-xs font-mono text-stone-500">${item.ipa}</span>
+              </div>
+              <button onclick="speakWord('${item.word.replace(/\s*\(.*?\)/g, '').replace(/'/g, "\\'")}')" class="p-2 rounded-xl bg-parchment-100 hover:bg-sage-100 text-sage-800 transition" title="Listen in British English">
+                <i data-lucide="volume-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">${item.def}</p>
+            <p class="text-xs italic text-stone-500 bg-parchment-50 p-2.5 rounded-xl border border-parchment-200">${item.quote}</p>
+          </div>
+
+          <div class="pt-2 border-t border-parchment-200 flex items-center justify-between text-xs">
+            <span class="text-sage-800 font-medium">🇷🇺 ${item.es}</span>
+            <button onclick="jumpToTranscriptTurn('${item.turnId}', '${key}')" class="text-autumn-700 hover:underline font-semibold text-[11px]">
+              See in Transcript →
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+    }
+
+    function jumpToTranscriptTurn(turnId, vocabKey) {
+      switchTab('transcript');
+      setTimeout(() => {
+        if (vocabKey) inspectVocab(vocabKey);
+        const el = document.getElementById(turnId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.classList.remove('turn-highlight-flash');
+          void el.offsetWidth;
+          el.classList.add('turn-highlight-flash');
+        }
+      }, 100);
+    }
+
+    function renderFixesAndPolishes() {
+      const polishesEl = document.getElementById('gentle-polishes-grid');
+      if (polishesEl) {
+        polishesEl.innerHTML = GENTLE_POLISHES.map(p => `
+          <div class="sanctuary-subcard rounded-2xl p-5 space-y-2.5 border-l-4 border-l-sage-500">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-semibold text-sage-800">${p.topic}</span>
+              <span class="px-2 py-0.5 rounded-full bg-parchment-100 font-mono text-[11px] text-stone-600">🕒 ${p.time}</span>
+            </div>
+            <div class="p-2.5 rounded-xl bg-autumn-50/70 border border-autumn-200/80 text-xs text-stone-600">
+              <span class="font-semibold text-autumn-800">In the moment:</span> "${p.said}"
+            </div>
+            <div class="p-2.5 rounded-xl bg-sage-50 border border-sage-200 text-xs text-slatewarm-900 flex items-center justify-between gap-2">
+              <div><span class="font-semibold text-sage-800">Natural Polish:</span> <strong>"${p.natural}"</strong></div>
+              <button onclick="speakWord('${p.natural.replace(/'/g, "\\'")}')" class="p-1.5 rounded-lg bg-white text-sage-700 hover:bg-sage-100 shrink-0" title="Listen">
+                <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+            <p class="text-xs text-stone-600 leading-relaxed">${p.why}</p>
+          </div>
+        `).join('');
+      }
+
+      const fixesEl = document.getElementById('asr-fixes-grid');
+      if (fixesEl) {
+        fixesEl.innerHTML = ASR_FIXES.map(f => `
+          <div class="sanctuary-subcard rounded-2xl p-4 space-y-2 border-t-2 border-t-autumn-400">
+            <div class="flex items-center justify-between text-[11px] font-mono text-stone-500">
+              <span>${f.speaker}</span>
+              <span>🕒 ${f.time}</span>
+            </div>
+            <div class="text-xs line-through text-stone-400">Note-taker wrote: "${f.wrong}"</div>
+            <div class="text-sm font-serif font-bold text-sage-800">Actually said: "${f.right}"</div>
+            <p class="text-xs text-stone-600 leading-relaxed">${f.note}</p>
+          </div>
+        `).join('');
+      }
+
+      if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+    }
+
+    // Flashcards & Quiz
+    function renderFlashcard() {
+      const key = FLASHCARD_KEYS[currentCardIndex];
+      const item = VOCAB_DB[key];
+      if (!item) return;
+
+      document.getElementById('fc-counter').textContent = `Card ${currentCardIndex + 1} of ${FLASHCARD_KEYS.length}`;
+      document.getElementById('fc-badge').textContent = `${item.time} • ${item.pos} (${item.level})`;
+
+      const titleEl = document.getElementById('fc-front-title');
+      const subEl = document.getElementById('fc-sub');
+      const backEl = document.getElementById('fc-back-details');
+
+      if (!isCardFlipped) {
+        titleEl.textContent = item.word;
+        subEl.textContent = `${item.ipa} — Click card to reveal meaning & lesson context`;
+        backEl.classList.add('hidden');
+      } else {
+        titleEl.textContent = item.word;
+        subEl.textContent = item.def;
+        document.getElementById('fc-quote').textContent = item.quote;
+        document.getElementById('fc-es').textContent = `🇷🇺 ${item.es}`;
+        backEl.classList.remove('hidden');
+      }
+    }
+
+    function flipFlashcard() {
+      isCardFlipped = !isCardFlipped;
+      renderFlashcard();
+    }
+    function nextFlashcard() {
+      isCardFlipped = false;
+      currentCardIndex = (currentCardIndex + 1) % FLASHCARD_KEYS.length;
+      renderFlashcard();
+    }
+    function prevFlashcard() {
+      isCardFlipped = false;
+      currentCardIndex = (currentCardIndex - 1 + FLASHCARD_KEYS.length) % FLASHCARD_KEYS.length;
+      renderFlashcard();
+    }
+    function speakCurrentFlashcard() {
+      const key = FLASHCARD_KEYS[currentCardIndex];
+      const item = VOCAB_DB[key];
+      if (item) speakWord(item.word.replace(/\s*\(.*?\)/g, ''));
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById('quiz-container');
+      if (!container) return;
+      container.innerHTML = QUIZ_QUESTIONS.map((q, qIdx) => `
+        <div class="sanctuary-subcard rounded-2xl p-4 space-y-2.5">
+          <p class="text-xs sm:text-sm font-medium text-slatewarm-900">${q.q}</p>
+          <div class="flex flex-wrap gap-2">
+            ${q.options.map((opt, oIdx) => `
+              <button id="qbtn-${qIdx}-${oIdx}" onclick="answerQuiz(${qIdx}, ${oIdx})" class="px-3 py-1.5 rounded-xl border border-[#dfd0b5] bg-parchment-50 hover:bg-autumn-100 text-xs font-medium text-stone-700 transition">
+                ${opt}
+              </button>
+            `).join('')}
+          </div>
+          <p id="qexp-${qIdx}" class="hidden text-xs text-sage-800 bg-sage-50 p-2.5 rounded-xl border border-sage-200"></p>
+        </div>
+      `).join('');
+    }
+
+    function answerQuiz(qIdx, oIdx) {
+      const q = QUIZ_QUESTIONS[qIdx];
+      const expEl = document.getElementById('qexp-' + qIdx);
+      q.options.forEach((_, idx) => {
+        const btn = document.getElementById('qbtn-' + qIdx + '-' + idx);
+        if (idx === q.correct) {
+          btn.className = 'px-3 py-1.5 rounded-xl border border-sage-500 bg-sage-600 text-white text-xs font-semibold';
+        } else if (idx === oIdx) {
+          btn.className = 'px-3 py-1.5 rounded-xl border border-autumn-300 bg-autumn-100 text-autumn-900 text-xs';
+        }
+      });
+      expEl.textContent = `✨ ${q.explain}`;
+      expEl.classList.remove('hidden');
+
+      if (oIdx === q.correct && !quizAnswered.has(qIdx)) {
+        quizAnswered.add(qIdx);
+        document.getElementById('quiz-score-badge').textContent = `${quizAnswered.size} / ${QUIZ_QUESTIONS.length} Completed`;
+        if (quizAnswered.size === QUIZ_QUESTIONS.length && typeof confetti === 'function') {
+          confetti({ particleCount: 55, spread: 60, origin: { y: 0.7 }, colors: ['#be6f38', '#5b826f', '#e2b086'] });
+        }
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // 7. TAB NAVIGATION, FILTERS & THEME SWITCHERS
+    // -------------------------------------------------------------------------
+    function switchTab(tabName) {
+      const tabs = ['transcript', 'vocab', 'fixes', 'places', 'practice'];
+      tabs.forEach(t => {
+        const panel = document.getElementById('tab-panel-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabName) {
+          panel.classList.remove('hidden');
+          btn.className = 'tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 bg-sage-700 text-white shadow-sm';
+          if (typeof gsap !== 'undefined') {
+            gsap.fromTo(panel, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' });
+          }
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'tab-btn flex-1 sm:flex-initial px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition flex items-center justify-center gap-2 text-stone-700 hover:bg-parchment-100';
+        }
+      });
+    }
+
+    function filterTranscript() {
+      renderTranscript();
+    }
+
+    function scrollToChapter(chapId) {
+      document.getElementById('speaker-filter').value = 'all';
+      document.getElementById('transcript-search').value = '';
+      renderTranscript();
+      const el = document.getElementById(chapId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    let highlightsOn = true;
+    function toggleVocabHighlights() {
+      highlightsOn = !highlightsOn;
+      document.body.classList.toggle('hide-vocab-highlights', !highlightsOn);
+      const btn = document.getElementById('btn-toggle-highlights');
+      btn.querySelector('span').textContent = `Vocab Highlights: ${highlightsOn ? 'On' : 'Off'}`;
+    }
+
+    let asrBadgesOn = true;
+    function toggleAsrBadges() {
+      asrBadgesOn = !asrBadgesOn;
+      document.body.classList.toggle('hide-asr-fixes', !asrBadgesOn);
+      const btn = document.getElementById('btn-toggle-asr');
+      btn.querySelector('span').textContent = `Note-Taker Fixes: ${asrBadgesOn ? 'Visible' : 'Hidden'}`;
+    }
+
+    function setThemeMood(mood) {
+      document.body.setAttribute('data-theme', mood);
+      ['kensington', 'winchester', 'twilight'].forEach(m => {
+        const btn = document.getElementById('theme-' + m);
+        if (!btn) return;
+        btn.className = m === mood
+          ? 'px-2 py-0.5 rounded-lg bg-autumn-100 text-autumn-800 font-semibold transition'
+          : 'px-2 py-0.5 rounded-lg text-stone-600 hover:text-stone-900 transition';
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // 8. BRITISH ENGLISH SPEECH SYNTHESIS (en-GB)
+    // -------------------------------------------------------------------------
+    let speechRate = 1.0;
+    function setVoiceRate(rate) {
+      speechRate = rate;
+      document.getElementById('rate-slow').className = rate < 1
+        ? 'px-1.5 py-0.5 rounded-md text-[11px] bg-sage-600 text-white font-semibold transition'
+        : 'px-1.5 py-0.5 rounded-md text-[11px] text-stone-600 hover:bg-parchment-100 transition';
+      document.getElementById('rate-normal').className = rate >= 1
+        ? 'px-1.5 py-0.5 rounded-md text-[11px] bg-sage-600 text-white font-semibold transition'
+        : 'px-1.5 py-0.5 rounded-md text-[11px] text-stone-600 hover:bg-parchment-100 transition';
+    }
+
+    function speakWord(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = 'en-GB';
+      utter.rate = speechRate;
+      const voices = window.speechSynthesis.getVoices();
+      const ukVoice = voices.find(v => v.lang.includes('en-GB') && (v.name.includes('Libby') || v.name.includes('Sonia') || v.name.includes('Google UK') || v.name.includes('Natural'))) || voices.find(v => v.lang.includes('en-GB'));
+      if (ukVoice) utter.voice = ukVoice;
+      window.speechSynthesis.speak(utter);
+    }
+
+    function speakPlainTurn(turnId) {
+      const turn = TRANSCRIPT_TURNS.find(t => t.id === turnId);
+      if (!turn) return;
+      const temp = document.createElement('div');
+      temp.innerHTML = turn.html;
+      temp.querySelectorAll('.asr-fix-pill').forEach(el => el.remove());
+      speakWord(temp.textContent || '');
+    }
+
+    // -------------------------------------------------------------------------
+    // 9. CALMING AUTUMN BREEZE & RAIN SOUNDSCAPE (WEB AUDIO API)
+    // -------------------------------------------------------------------------
+    let audioCtx = null;
+    let soundscapePlaying = false;
+    let masterGain = null;
+    let lfoTimer = null;
+    let currentFilter = null;
+
+    function buildNoiseBuffer(ctx) {
+      const bufferSize = ctx.sampleRate * 4;
+      const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const output = buffer.getChannelData(0);
+      let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+      for (let i = 0; i < bufferSize; i++) {
+        const white = Math.random() * 2 - 1;
+        b0 = 0.99886 * b0 + white * 0.0555179;
+        b1 = 0.99332 * b1 + white * 0.0750759;
+        b2 = 0.96900 * b2 + white * 0.1538520;
+        b3 = 0.86650 * b3 + white * 0.3104856;
+        b4 = 0.55000 * b4 + white * 0.5329522;
+        b5 = -0.7616 * b5 - white * 0.0168980;
+        output[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.04;
+        b6 = white * 0.115926;
+      }
+      return buffer;
+    }
+
+    function toggleSoundscape() {
+      const label = document.getElementById('soundscape-label');
+      const btn = document.getElementById('soundscape-btn');
+
+      if (!soundscapePlaying) {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const noiseSource = audioCtx.createBufferSource();
+        noiseSource.buffer = buildNoiseBuffer(audioCtx);
+        noiseSource.loop = true;
+
+        currentFilter = audioCtx.createBiquadFilter();
+        masterGain = audioCtx.createGain();
+        const vol = parseFloat(document.getElementById('soundscape-volume').value || '0.22');
+        masterGain.gain.setValueAtTime(0.01, audioCtx.currentTime);
+        masterGain.gain.exponentialRampToValueAtTime(vol, audioCtx.currentTime + 1.5);
+
+        noiseSource.connect(currentFilter);
+        currentFilter.connect(masterGain);
+        masterGain.connect(audioCtx.destination);
+        noiseSource.start();
+        audioCtx._activeSource = noiseSource;
+
+        soundscapePlaying = true;
+        applyPresetSettings(document.getElementById('soundscape-preset').value);
+
+        label.textContent = 'Autumn Breeze: Playing';
+        btn.classList.add('bg-sage-100', 'text-sage-900');
+      } else {
+        if (lfoTimer) clearInterval(lfoTimer);
+        if (audioCtx && audioCtx._activeSource) {
+          try { audioCtx._activeSource.stop(); } catch (e) {}
+        }
+        soundscapePlaying = false;
+        label.textContent = 'Autumn Breeze Audio: Off';
+        btn.classList.remove('bg-sage-100', 'text-sage-900');
+      }
+    }
+
+    function applyPresetSettings(preset) {
+      if (!currentFilter || !audioCtx) return;
+      if (lfoTimer) clearInterval(lfoTimer);
+
+      if (preset === 'breeze') {
+        currentFilter.type = 'bandpass';
+        currentFilter.Q.value = 1.8;
+        currentFilter.frequency.setValueAtTime(340, audioCtx.currentTime);
+        let t = 0;
+        lfoTimer = setInterval(() => {
+          if (!soundscapePlaying) return;
+          t += 0.15;
+          const freq = 320 + Math.sin(t) * 140 + Math.cos(t * 0.4) * 60;
+          currentFilter.frequency.setTargetAtTime(Math.max(180, freq), audioCtx.currentTime, 0.4);
+        }, 300);
+      } else if (preset === 'rain') {
+        currentFilter.type = 'lowpass';
+        currentFilter.Q.value = 0.7;
+        currentFilter.frequency.setTargetAtTime(880, audioCtx.currentTime, 0.3);
+      } else {
+        currentFilter.type = 'lowpass';
+        currentFilter.Q.value = 1.2;
+        currentFilter.frequency.setTargetAtTime(240, audioCtx.currentTime, 0.3);
+      }
+    }
+
+    function changeSoundscapePreset(preset) {
+      if (soundscapePlaying) applyPresetSettings(preset);
+    }
+
+    function updateSoundscapeVolume(val) {
+      if (masterGain && audioCtx && soundscapePlaying) {
+        masterGain.gain.setTargetAtTime(parseFloat(val), audioCtx.currentTime, 0.15);
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // 10. AUTUMN LEAVES BREEZE CANVAS ENGINE
+    // -------------------------------------------------------------------------
+    const canvas = document.getElementById('autumn-breeze-canvas');
+    const ctx = canvas.getContext('2d');
+    let leaves = [];
+    let leafMode = 1;
+
+    const LEAF_COLORS = [
+      'rgba(190, 111, 56, 0.42)',
+      'rgba(211, 140, 87, 0.40)',
+      'rgba(165, 191, 177, 0.42)',
+      'rgba(203, 179, 142, 0.45)',
+      'rgba(163, 88, 43, 0.34)'
+    ];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function createLeaf() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        size: 6 + Math.random() * 8,
+        speedY: 0.35 + Math.random() * 0.55,
+        speedX: 0.25 + Math.random() * 0.45,
+        angle: Math.random() * Math.PI * 2,
+        spin: (Math.random() - 0.5) * 0.014,
+        swayOffset: Math.random() * 100,
+        color: LEAF_COLORS[Math.floor(Math.random() * LEAF_COLORS.length)]
+      };
+    }
+
+    function rebuildLeaves() {
+      const count = leafMode === 1 ? 15 : leafMode === 2 ? 30 : 0;
+      leaves = Array.from({ length: count }, () => {
+        const l = createLeaf();
+        l.y = Math.random() * canvas.height;
+        return l;
+      });
+    }
+
+    function cycleLeafBreeze() {
+      leafMode = (leafMode + 1) % 3;
+      const label = document.getElementById('leaves-label');
+      if (leafMode === 1) label.textContent = 'Leaves: Gentle';
+      else if (leafMode === 2) label.textContent = 'Leaves: Crisp Breeze';
+      else label.textContent = 'Leaves: Still';
+      rebuildLeaves();
+    }
+
+    let breezeTime = 0;
+    function animateLeaves() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (leafMode !== 0) {
+        breezeTime += 0.01;
+        leaves.forEach(l => {
+          l.y += l.speedY;
+          l.x += l.speedX + Math.sin(breezeTime + l.swayOffset) * 0.45;
+          l.angle += l.spin;
+
+          if (l.y > canvas.height + 20) {
+            l.y = -20;
+            l.x = Math.random() * canvas.width;
+          }
+          if (l.x > canvas.width + 20) l.x = -20;
+
+          ctx.save();
+          ctx.translate(l.x, l.y);
+          ctx.rotate(l.angle);
+          ctx.fillStyle = l.color;
+          ctx.beginPath();
+          ctx.ellipse(0, 0, l.size, l.size * 0.52, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        });
+      }
+      requestAnimationFrame(animateLeaves);
+    }
+
+    // -------------------------------------------------------------------------
+    // INITIALIZE ON LOAD (WRAPPED IN TRY/CATCH PER RULE 6)
+    // -------------------------------------------------------------------------
+    window.addEventListener('DOMContentLoaded', () => {
+      try {
+        renderTranscript();
+        renderVocabGrid();
+        renderFixesAndPolishes();
+        renderFlashcard();
+        renderQuiz();
+        inspectVocab('outstanding');
+        rebuildLeaves();
+        animateLeaves();
+        if (typeof lucide !== 'undefined' && lucide.createIcons) lucide.createIcons();
+      } catch (err) {
+        console.error('Initialization error caught safely:', err);
+      }
+    });
+
+  </script>
+</body>
+</html>
